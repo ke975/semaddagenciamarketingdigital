@@ -1,0 +1,19 @@
+h1,h2,h3,h4,h5 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: italic;
+  
+}
+
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+    overflow-x: hidden;
+}
