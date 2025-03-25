@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer";
 import sectionImage from "./assets/Section.png"; // Importación correcta
 import sectionImage1 from "./assets/Section1.png";
 import section3 from "./assets/Section3.png"; //
-import Logo1 from "./assets/Logo1.png";
+import Logo1 from "./assets/logo1.png";
 
 
 const divStyle = {
