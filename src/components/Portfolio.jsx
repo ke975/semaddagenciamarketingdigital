@@ -1,7 +1,7 @@
 import CAFTERUA from "../assets/CAFTERUA.jpg";
 import Gira from "../assets/GiraTecnicacafe.jpg";
-import instagra from "../assets/instagra1.png";
-import instagra2 from "../assets/instagram2.png";
+import instagra1 from "../assets/instagra1.png";
+import instagram2 from "../assets/instagram2.png";
 import chessecake from "../assets/Chessecake1.png";
 import Hamburguesa from "../assets/Limondapost.png";
 export function Portfolio() {
@@ -21,10 +21,10 @@ export function Portfolio() {
           <img className="img-fluid btn btn-light hover-shadow" src={Gira} alt="" />
         </div>
         <div className="mt-5 col-md-4">
-          <img className="img-fluid btn btn-light hover-shadow" src={instagra} alt="" />
+          <img className="img-fluid btn btn-light hover-shadow" src={instagra1} alt="" />
         </div>
         <div className="mt-5 col-md-4">
-          <img className="img-fluid btn btn-light hover-shadow" src={instagra2} alt="" />
+          <img className="img-fluid btn btn-light hover-shadow" src={instagram2} alt="" />
         </div>
         <div className="mt-5 col-md-4">
           <img className="img-fluid btn btn-light hover-shadow" src={chessecake} alt="" />
