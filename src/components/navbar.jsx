@@ -9,9 +9,7 @@ export function Nav(){
     </button>
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
       <div class="navbar-nav mx-auto">
-        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-        <a class="nav-link text-white" href="#">Features</a>
-        <a class="nav-link text-white" href="#">Pricing</a>
+        
       
       </div>
     </div>

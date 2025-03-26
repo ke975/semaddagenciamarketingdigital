@@ -55,19 +55,21 @@ function App() {
         <Portfolio />
       </div>
 
-    <div className>
-      <div className="row">
-        <div className="col-md-6 mb-5">
-        <img   src={sectionImage1} alt="" />
-        </div>
-        <div className="col-md-6 p-5">
-      <h2 className="mt-5">"El marketing digital no solo se trata de vender productos, se trata de contar historias que conecten con tu audiencia."</h2>
-      <p>Las redes sociales son la ventana abierta al mundo, y tener una presencia estratégica puede marcar la diferencia. Aprende cómo crear contenido atractivo, gestionar campañas efectivas y construir una comunidad sólida que impulse tu marca. ¡Es hora de destacar en un mercado saturado!</p>
-
-        </div>
-        
-      </div>
+      <div className="container">
+  <div className="row align-items-center">
+    <div className="col-12 col-md-6 mb-4 mb-md-0">
+      <img src={sectionImage1} alt="" className="img-fluid" />
     </div>
+    <div className="col-12 col-md-6 p-4">
+      <h2 className="mt-3 mt-md-5">
+        "El marketing digital no solo se trata de vender productos, se trata de contar historias que conecten con tu audiencia."
+      </h2>
+      <p>
+        Las redes sociales son la ventana abierta al mundo, y tener una presencia estratégica puede marcar la diferencia. Aprende cómo crear contenido atractivo, gestionar campañas efectivas y construir una comunidad sólida que impulse tu marca. ¡Es hora de destacar en un mercado saturado!
+      </p>
+    </div>
+  </div>
+</div>
 
 
       <div style={divStyle1} >
