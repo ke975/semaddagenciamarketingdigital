@@ -3,10 +3,10 @@ import { Banner } from "./components/Banner";
 import { Portfolio } from "./components/Portfolio";
 import { Footer } from "./components/Footer";
 import sectionImage from "./assets/Section.png"; // Importación correcta
-import sectionImage1 from "./assets/Section1.png";
 import section3 from "./assets/Section3.png"; //
 import Logo1 from "./assets/logo1.png";
-
+import ImportanceChart from "./components/Chart";
+import FacebookPagePlugin from  "./components/fanpage"
 
 const divStyle = {
   backgroundImage: `url(${sectionImage})`,
@@ -23,6 +23,7 @@ const divStyle1 = {
   height: "700px",
   width: "100vw",
 };
+
 
 function App() {
   return (
@@ -55,7 +56,9 @@ function App() {
         <Portfolio />
       </div>
 
- 
+
+
+
 
       <div style={divStyle1} >
 
@@ -67,8 +70,49 @@ function App() {
        
       </div>
 
+      <FacebookPagePlugin/>
 
-      <div className="container py-5">
+        <ImportanceChart />
+    
+
+<div style={{ backgroundColor: '#22315E', padding: '20px' }}> 
+
+
+<div className="container" >
+  <div className="row align-items-center">
+  <div className="col-md-6 text-center">
+      <img 
+        src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+        alt="Equipo de Semadd" 
+        className="img-fluid mb-3" 
+      />
+    </div>
+    <div className="col-md-6 text-white">
+      <h2 className="mb-3">Marketing Digital y Desarrollo Web</h2>
+      <p>
+        En Semadd combinamos creatividad y tecnología para impulsar el éxito de tu negocio. Nuestro equipo de expertos se especializa en ofrecer soluciones personalizadas y estrategias innovadoras que potencian tu presencia en línea.
+      </p>
+      <ul className="list-unstyled text-start">
+        <li>
+          <strong>Estrategias de Marketing Digital:</strong> Campañas SEO, redes sociales, publicidad online y análisis de datos para aumentar la visibilidad de tu marca.
+        </li>
+        <li>
+          <strong>Desarrollo Web:</strong> Creación de sitios web modernos, responsivos y funcionales, diseñados a la medida para reflejar la identidad de tu negocio.
+        </li>
+        <li>
+          <strong>Innovación Tecnológica:</strong> Aplicación de las últimas tendencias y herramientas para optimizar la experiencia del usuario y mejorar los procesos de tu empresa.
+        </li>
+      </ul>
+      <p>
+        Trabajamos de la mano contigo para transformar ideas en soluciones digitales que marcan la diferencia. ¡Haz crecer tu negocio con nosotros y alcanza nuevos horizontes!
+      </p>
+    </div>
+  
+  </div>
+</div>
+
+</div>
+<div className="container py-5">
   <h2 className="text-center mb-5 fw-bold">Nuestros Planes</h2>
   <div className="row g-4 justify-content-center">
 
@@ -140,7 +184,6 @@ function App() {
 
   </div>
 </div>
-
 
 
       <Footer/>
