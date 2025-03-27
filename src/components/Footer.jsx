@@ -1,3 +1,5 @@
+import Logo from "../assets/Logo.png"
+
 export function Footer(){
     return(
         <div>
@@ -5,8 +7,8 @@ export function Footer(){
   <div className="container">
     <div className="row">
       <div className="col-md-4">
-        <h5 className="mb-3">Semadd</h5>
-        <p>Agencia de Marketing, Diseño y Desarrollo Web Empresarial</p>
+        <h5 className="mb-3"><img src={Logo} width={200} alt="" /></h5>
+        <p className="text-justify">Agencia de Marketing, Diseño <br /> y Desarrollo Web Empresarial</p>
         <ul className="list-unstyled">
           <li><a href="#" className="text-white">Sobre Nosotros</a></li>
           <li><a href="#" className="text-white">Servicios</a></li>
@@ -16,8 +18,7 @@ export function Footer(){
       <div className="col-md-4">
         <h5 className="mb-3">Redes Sociales</h5>
         <ul className="list-unstyled">
-          <li><a href="#" className="text-white">Facebook</a></li>
-          <li><a href="#" className="text-white">Twitter</a></li>
+          <li><a href="https://www.facebook.com/semadd4" className="text-white">Facebook</a></li>
           <li><a href="#" className="text-white">Instagram</a></li>
           <li><a href="#" className="text-white">LinkedIn</a></li>
         </ul>
