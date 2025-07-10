@@ -1,47 +1,29 @@
-import React from 'react';
-
-const FacebookPagePlugin = () => {
-  const pageUrl = 'https://www.facebook.com/semadd4';
-  const encodedPageUrl = encodeURIComponent(pageUrl);
-
-  return (
-    <div style={{ backgroundColor: '#22315E' }}>
-    <div className="container py-4" >
-      <div className="row align-items-center">
-        {/* Columna 1: Invitación */}
-        <div className="col-md-6 text-center mb-3">
-          <h2 className='text-white'>¡Síguenos en Facebook!</h2>
-          <p className='text-white'> 
-            Únete a nuestra comunidad para estar al día con nuestras últimas noticias,
-            promociones y contenido exclusivo.
-          </p>
-          <a
-            href={pageUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary"
-          >
-            Visítanos
-          </a>
-        </div>
-
-        {/* Columna 2: Plugin de Facebook */}
-        <div className="col-md-6 text-center">
-          <iframe
-            src={`https://www.facebook.com/plugins/page.php?href=${encodedPageUrl}&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true`}
-            width="400"
-            height="500"
-            style={{ border: 'none', overflow: 'hidden' }}
-            scrolling="no"
-            frameBorder="0"
-            allow="encrypted-media"
-            title="Facebook Page Plugin"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-    </div>
-  );
-};
-
-export default FacebookPagePlugin;
+export function AboutSemadd (){
+    return (
+        <section className="py-14">
+            <div className="max-w-screen-xl mx-auto md:px-8">
+                <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
+                    <div className="flex-1 sm:hidden lg:block">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" className="md:max-w-lg sm:rounded-lg" alt="" />
+                    </div>
+                    <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-4xl">
+                        <h1 className="text-indigo-600 txt-2xl font-semibold">
+                           SEMADD 
+                        </h1>
+                        <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                           "Impulsa tu solución digital con la ayuda de nuestros expertos"
+                        </p>
+                        <p className="mt-3 text-gray-600">
+Semadd es una agencia especializada en soluciones digitales integrales, enfocada en ofrecer servicios de marketing, diseño y desarrollo web para empresas que buscan destacar en el mundo digital. Nuestro equipo de expertos trabaja de la mano con cada cliente para crear estrategias de marketing personalizadas, desarrollar sitios web visualmente atractivos y funcionales, y optimizar la presencia online de las marcas a través de campañas de marketing digital efectivas. En Semadd, entendemos que cada empresa tiene sus propias necesidades y objetivos, por lo que nos aseguramos de brindar soluciones a medida que ayuden a nuestros clientes a crecer y conectar con su público objetivo.                     </p>
+                        <a href="javascript:void(0)" className="inline-flex gap-x-1 items-center text-indigo-600 hover:text-indigo-500 duration-150 font-medium">
+                            Learn more
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
+                                <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
