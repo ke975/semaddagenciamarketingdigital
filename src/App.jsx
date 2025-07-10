@@ -3,7 +3,7 @@ import { Banner } from "./components/Banner";
 import { AboutSemadd } from "./components/fanpage";
 import { Portfolio } from "./components/Portfolio";
 import { Footer } from "./components/Footer";
-import {ImportanceChart} from "./components/chart";
+import {ImportanceChart} from "./components/Chart";
 import sectionImage from "./assets/Section.png"; // Importación correcta
 import section3 from "./assets/Section3.png"; //
 import { Pricing } from "./components/Pricing";
