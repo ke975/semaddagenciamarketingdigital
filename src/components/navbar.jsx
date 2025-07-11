@@ -2,18 +2,12 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "../assets/Logo.png";
 
-// Simple Particles Animation Component
+// Particles background animation
 function ParticlesBG() {
     const canvasRef = useRef(null);
 
     useEffect(() => {
-        const colors = [
-            "#0ea5e9", // sky-500
-            "#e879f9", // fucsia
-            "#c084fc", // violeta
-            "#4f46e5", // azul oscuro
-            "#fff"     // blanco
-        ];
+        const colors = ["#0ea5e9", "#e879f9", "#c084fc", "#4f46e5", "#fff"];
         const canvas = canvasRef.current;
         const ctx = canvas.getContext("2d");
         let particles = [];
@@ -21,13 +15,13 @@ function ParticlesBG() {
         let width = canvas.width = window.innerWidth;
         let height = canvas.height = window.innerHeight;
 
-        function handleResize() {
+        const handleResize = () => {
             width = canvas.width = window.innerWidth;
             height = canvas.height = window.innerHeight;
-        }
+        };
         window.addEventListener("resize", handleResize);
 
-        function createParticles() {
+        const createParticles = () => {
             particles = [];
             for (let i = 0; i < 60; i++) {
                 particles.push({
@@ -40,9 +34,9 @@ function ParticlesBG() {
                     alpha: Math.random() * 0.5 + 0.3
                 });
             }
-        }
+        };
 
-        function draw() {
+        const draw = () => {
             ctx.clearRect(0, 0, width, height);
             for (let p of particles) {
                 ctx.save();
@@ -58,12 +52,11 @@ function ParticlesBG() {
                 p.x += p.dx;
                 p.y += p.dy;
 
-                // Bounce on edges
                 if (p.x < 0 || p.x > width) p.dx *= -1;
                 if (p.y < 0 || p.y > height) p.dy *= -1;
             }
             animationId = requestAnimationFrame(draw);
-        }
+        };
 
         createParticles();
         draw();
@@ -87,29 +80,30 @@ export function Nav() {
     const [state, setState] = useState(false);
     const [dropdown, setDropdown] = useState(false);
 
-    // Navegación con dropdown para "Nosotros" y "Servicios"
     const navigation = [
-        { title: "Inicio", path: "javascript:void(0)" },
-        { 
-            title: "Nosotros", 
+        { title: "Inicio", path: "#" },
+        {
+            title: "Nosotros",
             dropdown: [
-                { title: "Misión", path: "javascript:void(0)" },
-                { title: "Visión", path: "javascript:void(0)" }
+                { title: "Misión", path: "#About" },
+                { title: "Visión", path: "#About" }
             ]
         },
-        { 
-            title: "Servicios", 
+        {
+            title: "Servicios",
             dropdown: [
-                { title: "Branding", path: "javascript:void(0)" },
-                { title: "Diseño Web", path: "javascript:void(0)" },
-                { title: "Gestión de Redes Sociales", path: "javascript:void(0)" },
-                { title: "Publicidad Digital", path: "javascript:void(0)" },
-                { title: "SEO y SEM", path: "javascript:void(0)" },
-                { title: "Email Marketing", path: "javascript:void(0)" },
-                { title: "Consultoría", path: "javascript:void(0)" }
+                { title: "Start web", path: "#services" },
+                { title: "Pro Web", path: "#services" },
+                { title: "Web Avanzada Escalable", path: "#services" },
+                { title: "Taller Digitalizate", path: "#services" },
+                { title: "Asesoría Personalizada", path: "#services" },
+                { title: "Taller Para Equipos", path: "#services" },
+                { title: "Marca Base", path: "#services" },
+                { title: "Marca Pro", path: "#services" },
+                { title: "Identidad Total", path: "#services" }
             ]
         },
-        { title: "Contáctanos", path: "javascript:void(0)" }
+        { title: "Contáctanos", path: "#contact" }
     ];
 
     useEffect(() => {
@@ -121,28 +115,25 @@ export function Nav() {
     }, []);
 
     const Brand = () => (
-        <div className="flex items-center gap-4 py-3 md:py-5">
-            <a href="javascript:void(0)" className="flex items-center gap-2">
+        <div className="flex items-center gap-4 py-3 md:py-5 ">
+            <a href="#" className="flex items-center gap-2">
                 <motion.img
                     src={Logo}
                     width={120}
                     height={120}
                     alt="SEMADD logo"
-                    className="rounded-xl shadow-lg  p-1"
+                    className="rounded-xl shadow-lg p-1"
                     initial={{ opacity: 0, scale: 0.7, rotate: -10 }}
                     animate={{ opacity: 1, scale: 1, rotate: 0 }}
                     transition={{ duration: 1, type: "spring" }}
                     whileHover={{ scale: 1.08, rotate: 2 }}
                 />
-           
             </a>
             <div className="md:hidden">
-                <button className="menu-btn text-gray-400 hover:text-gray-300"
-                    onClick={() => setState(!state)}
-                >
+                <button className="menu-btn text-gray-400 hover:text-gray-300" onClick={() => setState(!state)}>
                     {
                         state ? (
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
                             </svg>
                         ) : (
@@ -211,14 +202,6 @@ export function Nav() {
                                         </li>
                                     )
                                 ))}
-                                <li>
-                                    <a href="javascript:void(0)" className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-sky-500 hover:bg-sky-400 active:bg-sky-600 duration-150 rounded-full md:inline-flex shadow">
-                                        Get started
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                                            <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
-                                        </svg>
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -230,7 +213,7 @@ export function Nav() {
                     <motion.img
                         src={Logo}
                         alt="SEMADD logo"
-                        className="mx-auto mb-4 rounded-2xl shadow-2xl  p-4"
+                        className="mx-auto mb-4 rounded-2xl shadow-2xl p-4"
                         initial={{ opacity: 0, scale: 0.7, rotate: -10 }}
                         animate={{ opacity: 1, scale: 1, rotate: 0 }}
                         transition={{ duration: 1, type: "spring" }}
@@ -244,7 +227,7 @@ export function Nav() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
                     >
-                   <span className="text-sky-400"> Bienvenidos a SEMADD</span>
+                        <span className="text-sky-400">Bienvenidos a SEMADD</span>
                     </motion.h2>
                     <motion.p
                         className="max-w-2xl mx-auto text-gray-300 text-lg md:text-2xl mb-8"
@@ -252,24 +235,8 @@ export function Nav() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
                     >
-                        <span className="text-sky-400 font-semibold">Agencia de Marketing Digital</span> potenciamos empresas y emprendedores con servicios de branding, diseño web, gestión de redes sociales, campañas publicitarias, SEO, email marketing y consultoría.
+                        <span className="text-sky-400 font-semibold"></span> potenciamos empresas y emprendedores con servicios de branding, diseño web y desarrollo web, publicidad, SEO y más.
                     </motion.p>
-                    <motion.div
-                        className="flex justify-center items-center gap-x-4 text-gray-400 text-sm"
-                        initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 1.1, type: "spring" }}
-                    >
-                        <div className="flex">
-                            {/* ...estrellas SVG... */}
-                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" /></svg>
-                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" /></svg>
-                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" /></svg>
-                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" /></svg>
-                            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" /></svg>
-                        </div>
-                        <p><span className="text-gray-100">5.0</span> por más de 200 usuarios</p>
-                    </motion.div>
                 </div>
             </section>
         </div>

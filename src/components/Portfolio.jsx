@@ -16,9 +16,9 @@ const projects = [
 
 export function Portfolio() {
   return (
-    <section className="py-14 bg-gradient-to-br from-indigo-50 via-white to-indigo-100">
+    <section className="py-14 ">
       <div className="max-w-6xl mx-auto px-4">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-center text-indigo-700 mb-10 drop-shadow">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-center text-white mb-10 drop-shadow">
           Nuestro Portafolio
         </h1>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">

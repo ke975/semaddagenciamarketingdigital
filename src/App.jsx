@@ -10,7 +10,8 @@ import { Pricing } from "./components/Pricing";
 import { Testimonials } from "./components/Testimonials";
 import {Services} from "./components/services";
 import{ Team } from "./components/Team";
-
+import { WhatsAppFloatingButton } from "./components/whatsap";
+import { Cta } from "./components/Cta";
 const divStyle = {
   backgroundImage: `url(${sectionImage})`,
   backgroundSize: "cover",
@@ -58,30 +59,30 @@ function App() {
 
         </div>
       </div>
-      <div style={divStyle}></div>
+      <div  className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800 min-h-screen flex flex-col relative overflow-hidden"  >
 
+ <Portfolio />
 
-      <div>
-        <Portfolio />
       </div>
+
+
+      
 
 <Testimonials/>
 
 
 
 
-    <Pricing />
-      
 
         
     
 
-
+<Cta/>
 
 
       <Footer/>
 
-
+    <WhatsAppFloatingButton />
 
       
     </>
