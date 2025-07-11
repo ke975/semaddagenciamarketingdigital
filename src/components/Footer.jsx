@@ -1,4 +1,4 @@
-import Logo from '../assets/Logo.png'
+import Logo1 from '../assets/Logo1.png'
 
 export function Footer () {
 
@@ -37,7 +37,7 @@ export function Footer () {
             <div className="gap-6 justify-between md:flex">
                 <div className="flex-1">
                     <div className="max-w-xs">
-                        <img src={Logo} className="w-32" alt="Logo Semadd" />
+                        <img src={Logo1} className="w-32" alt="Logo Semadd" />
                         <p className="leading-relaxed mt-2 text-[15px]">
                             SEMADD es una agencia digital especializada en marketing, diseño y desarrollo web empresarial. Impulsamos tu marca con creatividad, innovación y soluciones a medida para crecer en el mundo digital.
                         </p>

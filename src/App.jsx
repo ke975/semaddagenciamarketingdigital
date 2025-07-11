@@ -1,5 +1,5 @@
 import { Nav } from "./components/navbar";
-import { Banner } from "./components/Banner";
+
 import { AboutSemadd } from "./components/fanpage";
 import { Portfolio } from "./components/Portfolio";
 import { Footer } from "./components/Footer";
@@ -9,6 +9,7 @@ import section3 from "./assets/Section3.png"; //
 import { Pricing } from "./components/Pricing";
 import { Testimonials } from "./components/Testimonials";
 import {Services} from "./components/services";
+import{ Team } from "./components/Team";
 
 const divStyle = {
   backgroundImage: `url(${sectionImage})`,
@@ -41,6 +42,8 @@ function App() {
 
 
       <ImportanceChart />
+<Team />
+
 
   <Services />
 
@@ -48,7 +51,7 @@ function App() {
 
 
 
-      <div className="container mb-5 mt-5">
+      <div className="container">
         <div className="row">
           
 

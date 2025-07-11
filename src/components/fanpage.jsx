@@ -1,29 +1,101 @@
-export function AboutSemadd (){
+import { useState } from "react";
+
+export function AboutSemadd() {
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const reasons = [
+        {
+            title: "Estrategias Personalizadas",
+            content:
+                "Cada cliente es único. Creamos estrategias de marketing digital a medida, alineadas a tus objetivos y necesidades específicas.",
+        },
+        {
+            title: "Equipo Multidisciplinario",
+            content:
+                "Contamos con expertos en branding, diseño web, publicidad, SEO y redes sociales para ofrecerte soluciones integrales.",
+        },
+        {
+            title: "Acompañamiento Cercano",
+            content:
+                "Te acompañamos en cada paso del proceso, brindando asesoría y soporte continuo para que tu proyecto crezca.",
+        },
+        {
+            title: "Resultados Medibles",
+            content:
+                "Nos enfocamos en resultados reales y medibles, optimizando campañas y acciones para maximizar tu retorno de inversión.",
+        },
+    ];
+
     return (
-        <section className="py-14">
-            <div className="max-w-screen-xl mx-auto md:px-8">
-                <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
-                    <div className="flex-1 sm:hidden lg:block">
-                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" className="md:max-w-lg sm:rounded-lg" alt="" />
-                    </div>
-                    <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-4xl">
-                        <h1 className="text-indigo-600 txt-2xl font-semibold">
-                           SEMADD 
-                        </h1>
-                        <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                           "Impulsa tu solución digital con la ayuda de nuestros expertos"
-                        </p>
-                        <p className="mt-3 text-gray-600">
-Semadd es una agencia especializada en soluciones digitales integrales, enfocada en ofrecer servicios de marketing, diseño y desarrollo web para empresas que buscan destacar en el mundo digital. Nuestro equipo de expertos trabaja de la mano con cada cliente para crear estrategias de marketing personalizadas, desarrollar sitios web visualmente atractivos y funcionales, y optimizar la presencia online de las marcas a través de campañas de marketing digital efectivas. En Semadd, entendemos que cada empresa tiene sus propias necesidades y objetivos, por lo que nos aseguramos de brindar soluciones a medida que ayuden a nuestros clientes a crecer y conectar con su público objetivo.                     </p>
-                        <a href="javascript:void(0)" className="inline-flex gap-x-1 items-center text-indigo-600 hover:text-indigo-500 duration-150 font-medium">
-                            Learn more
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                                <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
+        <section className="py-16 bg-gray-50">
+            <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+                    {/* Columna izquierda: ícono animado + título */}
+                    <div className="flex flex-col items-center text-center lg:items-start lg:text-left space-y-4">
+                        <div className="flex justify-center lg:justify-start">
+                            <svg
+                                className="w-16 h-16 text-indigo-600 animate-bounce"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth={1.5}
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M9 18h6m-3 0v3m-4.5-3a5.25 5.25 0 01.228-10.498 6.75 6.75 0 0111.06 5.79c0 1.317-.397 2.544-1.08 3.564A6.018 6.018 0 0115 18h-6z"
+                                />
                             </svg>
-                        </a>
+                        </div>
+                        <h2 className="text-3xl font-bold text-indigo-700">
+                            ¿Por qué elegirnos?
+                        </h2>
+                        <p className="text-gray-600 max-w-md">
+                            Descubrí las razones que nos hacen diferentes y por qué somos la mejor opción para potenciar tu presencia digital.
+                        </p>
+                    </div>
+
+                    {/* Columna derecha: acordeón */}
+                    <div className="space-y-6">
+                        {reasons.map((item, idx) => {
+                            const isOpen = openIndex === idx;
+                            return (
+                                <div key={idx} className="border border-indigo-200 rounded-lg shadow bg-white">
+                                    <button
+                                        className="w-full flex justify-between items-center px-5 py-4 text-left text-indigo-700 font-semibold"
+                                        onClick={() => setOpenIndex(isOpen ? null : idx)}
+                                    >
+                                        <span>{item.title}</span>
+                                        <svg
+                                            className={`w-5 h-5 transition-transform duration-300 ${
+                                                isOpen ? "rotate-180" : ""
+                                            }`}
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeWidth={2}
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                d="M19 9l-7 7-7-7"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <div
+                                        className={`overflow-hidden px-5 transition-all duration-300 text-gray-600 ${
+                                            isOpen ? "max-h-40 py-2" : "max-h-0 py-0"
+                                        }`}
+                                    >
+                                        <p>{item.content}</p>
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }

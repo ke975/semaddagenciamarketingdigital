@@ -2,93 +2,62 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const timeline = [
-  {
-    year: "2021",
-   
-    iconBg: "bg-indigo-200",
-    iconColor: "text-indigo-600",
-    border: "border-indigo-400",
-    title: "Nace SEMADD Agencia",
-    titleColor: "text-indigo-700",
-    desc: "SEMADD surge con la misión de impulsar empresas al mundo digital, combinando creatividad, tecnología y estrategia para lograr resultados reales.",
-    tag: "Fundación",
-    tagBg: "bg-indigo-100",
-    tagColor: "text-indigo-700",
-  },
-  {
-    year: "2022",
-    icon: "web",
-    iconBg: "bg-sky-200",
-    iconColor: "text-sky-600",
-    border: "border-sky-400",
-    title: "Primeros Proyectos Web",
-    titleColor: "text-sky-700",
-    desc: "Lanzamos nuestros primeros sitios web empresariales, ayudando a pymes a tener presencia profesional y funcional en internet.",
-    images: [
-      "https://cdn.flyonui.com/fy-assets/components/timeline/image-2.png",
-      "https://cdn.flyonui.com/fy-assets/components/timeline/image-3.png",
-      "https://cdn.flyonui.com/fy-assets/components/timeline/image-1.png",
-      "https://cdn.flyonui.com/fy-assets/components/timeline/image-4.png",
-    ],
-    tag: null,
-  },
-  {
-    year: "2023",
-  
-    iconBg: "bg-pink-200",
-    iconColor: "text-pink-600",
-    border: "border-pink-400",
-    title: "Diseño Creativo",
-    titleColor: "text-pink-700",
-    desc: "Incorporamos servicios de branding y diseño gráfico, creando identidades visuales únicas para nuestros clientes.",
-    designer: {
-      img: "https://cdn.flyonui.com/fy-assets/avatar/avatar-6.png",
-      name: "Equipo Creativo SEMADD",
-      role: "Diseño & Branding",
-    },
-    tag: "Creatividad",
-    tagBg: "bg-pink-100",
-    tagColor: "text-pink-700",
-  },
-  {
-    year: "2024",
- 
-    iconBg: "bg-green-200",
-    iconColor: "text-green-600",
-    border: "border-green-400",
-    title: "Marketing Digital",
-    titleColor: "text-green-700",
-    desc: "Expandimos nuestros servicios a campañas de marketing digital, SEO y gestión de redes sociales, logrando resultados medibles para nuestros clientes.",
-    icons: [
-      "https://cdn.flyonui.com/fy-assets/components/card/icon-1.png",
-      "https://cdn.flyonui.com/fy-assets/components/card/icon-2.png",
-      "https://cdn.flyonui.com/fy-assets/components/card/icon-3.png",
-    ],
-    tags: [
-      { text: "SEO", bg: "bg-green-100", color: "text-green-700" },
-      { text: "Ads", bg: "bg-green-100", color: "text-green-700" },
-      { text: "Redes Sociales", bg: "bg-green-100", color: "text-green-700" },
-    ],
-  },
-  {
-    year: "2025",
-  
-    iconBg: "bg-purple-200",
-    iconColor: "text-purple-600",
-    border: "border-purple-400",
-    title: "Innovación y Futuro",
-    titleColor: "text-purple-700",
-    desc: "SEMADD sigue creciendo, apostando por la innovación, nuevas tecnologías y soluciones digitales a medida para empresas de todos los tamaños.",
-    tag: "Innovación",
-    tagBg: "bg-purple-100",
-    tagColor: "text-purple-700",
-  },
+  // ... (tu contenido original del timeline aquí)
 ];
 
 export function ImportanceChart() {
   return (
-    <div className="w-full flex justify-center py-12 bg-gradient-to-br from-indigo-100 via-white to-indigo-200">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-5xl">
+    <div className="w-full flex flex-col items-center py-16 bg-gradient-to-br from-indigo-100 via-white to-indigo-200">
+      
+      {/* Misión y Visión */}
+      <div className="max-w-4xl px-6 mb-12 text-center space-y-8">
+        <motion.h2
+          className="text-4xl font-bold text-indigo-700"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          Nuestra Esencia
+        </motion.h2>
+
+        <motion.div
+          className="bg-white shadow-lg rounded-xl p-6 border-l-4 border-indigo-400 text-left"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-xl font-semibold text-indigo-700 mb-2">Misión</h3>
+          <p className="text-gray-600">
+            Impulsar el crecimiento de marcas y negocios en el entorno digital,
+            combinando creatividad, estrategia e innovación. En SEMADD,
+            trabajamos para ofrecer soluciones personalizadas que conecten con
+            las personas y generen resultados reales y medibles, acompañando a
+            nuestros clientes en cada etapa de su transformación digital.
+          </p>
+        </motion.div>
+
+        <motion.div
+          className="bg-white shadow-lg rounded-xl p-6 border-l-4 border-indigo-400 text-left"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-xl font-semibold text-indigo-700 mb-2">Visión</h3>
+          <p className="text-gray-600">
+            Ser una agencia referente en Latinoamérica en soluciones digitales
+            integrales, destacándonos por la calidad humana, la innovación
+            constante y el impacto positivo que generamos en cada proyecto.
+            Aspiramos a construir relaciones duraderas con nuestros clientes,
+            evolucionando juntos en un mundo digital en constante cambio.
+          </p>
+        </motion.div>
+      </div>
+
+      {/* Línea de tiempo */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-5xl px-4">
         {timeline.map((item, idx) => (
           <motion.div
             key={item.year}
@@ -113,8 +82,10 @@ export function ImportanceChart() {
                 <div className="text-xs text-gray-400 font-semibold">{item.year}</div>
               </div>
             </motion.div>
+
             <div className="mb-4 text-gray-600">{item.desc}</div>
-            {/* Extra content per item */}
+
+            {/* Images */}
             {item.images && (
               <div className="flex flex-wrap gap-3 mb-3">
                 {item.images.map((img, i) => (
@@ -131,6 +102,8 @@ export function ImportanceChart() {
                 ))}
               </div>
             )}
+
+            {/* Designer */}
             {item.designer && (
               <motion.div
                 className="flex items-center gap-2 mb-3"
@@ -146,6 +119,8 @@ export function ImportanceChart() {
                 </div>
               </motion.div>
             )}
+
+            {/* Icons */}
             {item.icons && (
               <div className="flex flex-wrap gap-3 mb-3">
                 {item.icons.map((icon, i) => (
@@ -162,6 +137,7 @@ export function ImportanceChart() {
                 ))}
               </div>
             )}
+
             {/* Tags */}
             <div className="flex flex-wrap gap-2 mt-2">
               {item.tag && (

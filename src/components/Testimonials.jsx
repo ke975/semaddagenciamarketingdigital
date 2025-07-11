@@ -2,19 +2,19 @@ export function Testimonials(){
 
     const testimonials = [
         {
-            avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+       
             name: "Casa de la Piñata",
             title: "Emprendimiento de eventos",
             quote: "Gracias a SEMADD logramos digitalizar nuestro negocio y aumentar nuestras ventas en redes sociales. El equipo siempre estuvo atento y nos ayudó a crear una imagen profesional. ¡Recomendados!"
         },
         {
-            avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+         
             name: "Tecnogiras Nicaragua",
             title: "Organización de eventos tecnológicos",
             quote: "SEMADD nos apoyó con el diseño de nuestra web y campañas de marketing digital. Ahora llegamos a más empresas y profesionales. Excelente servicio y atención personalizada."
         },
         {
-            avatar: "https://randomuser.me/api/portraits/men/86.jpg",
+          
             name: "Caffeto",
             title: "Cafetería y eventos",
             quote: "El equipo de SEMADD nos ayudó a mejorar nuestra presencia digital y a conectar con más clientes. Su creatividad y profesionalismo marcaron la diferencia en nuestro crecimiento."
@@ -49,7 +49,7 @@ export function Testimonials(){
                                             </p>
                                         </blockquote>
                                         <div className="flex items-center gap-x-4 p-4 mt-6 bg-indigo-50">
-                                            <img src={item.avatar} className="w-16 h-16 rounded-full border-2 border-indigo-500" />
+                                           
                                             <div>
                                                 <span className="block text-gray-800 font-semibold">{item.name}</span>
                                                 <span className="block text-indigo-600 text-sm mt-0.5">{item.title}</span>
