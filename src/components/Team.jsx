@@ -1,5 +1,5 @@
 import Foto1 from "../assets/Foto2.png";
-
+import Foto2 from "../assets/Foto1.png";
 
 export function Team() {
   const team = [
@@ -13,7 +13,7 @@ export function Team() {
       twitter: "javascript:void(0)",
     },
     {
-      avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
+      avatar:Foto2 ,
       name: "Pedro Antonio Castillo Torres",
       title: "CEO de SEMADD",
       desc: "fundador de Semadd, una empresa especializada en el desarrollo de soluciones digitales innovadoras que impulsan la transformación tecnológica de emprendedores, pymes y empresas.",
