@@ -3,9 +3,7 @@ export function Cta() {
     <section className="py-28 bg-gradient-to-b from-gray-700 via-gray-900 to-gray-800 relative overflow-hidden">
       <div className="max-w-screen-xl mx-auto px-4 text-white text-center md:px-8">
         <div className="max-w-2xl mx-auto space-y-6">
-          <h3 className="text-white font-semibold uppercase tracking-wide">
-            Servicios Profesionales
-          </h3>
+
 
           <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
             Impulsá tu presencia digital con SEMADD

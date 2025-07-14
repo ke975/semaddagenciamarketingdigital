@@ -1,19 +1,22 @@
+import Foto1 from "../assets/Foto2.png";
+
+
 export function Team() {
   const team = [
     {
       avatar:
-        "https://scontent.fmga9-2.fna.fbcdn.net/v/t39.30808-6/473187448_122093252990737963_3864691848293211936_n.jpg?...",
+        Foto1,
       name: "Kevin Omar Castillo Torres",
-      title: "Desarrollador Web",
-      desc: "Apasionado por la tecnología y el desarrollo de soluciones digitales escalables.",
+      title: "CTO de Semadd",
+      desc: "Desarrollador Web, Apasionado por la tecnología y el desarrollo de soluciones digitales escalables.",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
     },
     {
       avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
       name: "Pedro Antonio Castillo Torres",
-      title: "Ingeniero de Software",
-      desc: "Especialista en backend, bases de datos y automatización de procesos empresariales.",
+      title: "CEO de SEMADD",
+      desc: "fundador de Semadd, una empresa especializada en el desarrollo de soluciones digitales innovadoras que impulsan la transformación tecnológica de emprendedores, pymes y empresas.",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
     },

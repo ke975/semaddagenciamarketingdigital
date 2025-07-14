@@ -1,91 +1,21 @@
-import { Nav } from "./components/navbar";
-
-import { AboutSemadd } from "./components/fanpage";
-import { Portfolio } from "./components/Portfolio";
-import { Footer } from "./components/Footer";
-import {ImportanceChart} from "./components/Chart";
-import sectionImage from "./assets/Section.png"; // Importación correcta
-import section3 from "./assets/Section3.png"; //
-import { Pricing } from "./components/Pricing";
-import { Testimonials } from "./components/Testimonials";
-import {Services} from "./components/services";
-import{ Team } from "./components/Team";
-import { WhatsAppFloatingButton } from "./components/whatsap";
-import { Cta } from "./components/Cta";
-const divStyle = {
-  backgroundImage: `url(${sectionImage})`,
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  height: "700px",
-  width: "100vw",
-};
-
-const divStyle1 = {
-  backgroundImage: `url(${section3})`,
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  height: "700px",
-  width: "100vw",
-};
-
+// main.jsx o App.jsx
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Landing} from "./pages/Landing";
+import { About } from "./pages/About";
+import { Services } from "./pages/Services"
+import { Contact } from "./pages/Contact";
 
 function App() {
   return (
-    <>
-    
-<Nav />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/about" element={<About />} />
 
-
-
-
-  <AboutSemadd />
-
-
-
-      <ImportanceChart />
-<Team />
-
-
-  <Services />
-
-
-
-
-
-      <div className="container">
-        <div className="row">
-          
-
-
-        </div>
-      </div>
-      <div  className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800 min-h-screen flex flex-col relative overflow-hidden"  >
-
- <Portfolio />
-
-      </div>
-
-
-      
-
-<Testimonials/>
-
-
-
-
-
-        
-    
-
-<Cta/>
-
-
-      <Footer/>
-
-    <WhatsAppFloatingButton />
-
-      
-    </>
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

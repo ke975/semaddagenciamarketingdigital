@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Carrousell } from "./Carrousell";
 import Logo from "../assets/Logo.png";
-
+import { Link } from "react-router-dom";
 // Particles background animation
 function ParticlesBG() {
     const canvasRef = useRef(null);
@@ -75,35 +76,34 @@ function ParticlesBG() {
         />
     );
 }
-
 export function Nav() {
     const [state, setState] = useState(false);
     const [dropdown, setDropdown] = useState(false);
 
     const navigation = [
-        { title: "Inicio", path: "#" },
+        { title: "Inicio", path: "/"},
         {
             title: "Nosotros",
             dropdown: [
-                { title: "Misión", path: "#About" },
-                { title: "Visión", path: "#About" }
+                { title: "Misión", path: "/about" },
+                { title: "Visión", path: "/about" }
             ]
         },
         {
             title: "Servicios",
             dropdown: [
-                { title: "Start web", path: "#services" },
-                { title: "Pro Web", path: "#services" },
-                { title: "Web Avanzada Escalable", path: "#services" },
-                { title: "Taller Digitalizate", path: "#services" },
-                { title: "Asesoría Personalizada", path: "#services" },
-                { title: "Taller Para Equipos", path: "#services" },
-                { title: "Marca Base", path: "#services" },
-                { title: "Marca Pro", path: "#services" },
-                { title: "Identidad Total", path: "#services" }
+                { title: "Start web", path: "/services" },
+                { title: "Pro Web", path: "/services" },
+                { title: "Web Avanzada Escalable", path: "/services" },
+                { title: "Taller Digitalizate", path: "/services" },
+                { title: "Asesoría Personalizada", path: "/services" },
+                { title: "Taller Para Equipos", path: "/services" },
+                { title: "Marca Base", path: "/services" },
+                { title: "Marca Pro", path: "/services" },
+                { title: "Identidad Total", path: "/services" }
             ]
         },
-        { title: "Contáctanos", path: "#contact" }
+        { title: "Contáctanos", path: "/contact" }
     ];
 
     useEffect(() => {
@@ -148,97 +148,104 @@ export function Nav() {
     );
 
     return (
-        <div className="bg-gray-900 min-h-screen flex flex-col relative overflow-hidden">
-            <header>
-                <div className={`md:hidden ${state ? "mx-2 pb-5" : "hidden"}`}>
-                    <Brand />
-                </div>
-                <nav className={`pb-5 md:text-sm ${state ? "absolute z-20 top-0 inset-x-0 bg-gray-800 rounded-xl mx-2 mt-2 md:mx-0 md:mt-0 md:relative md:bg-transparent" : ""}`}>
-                    <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
-                        <Brand />
-                        <div className={`flex-1 items-center mt-8 md:mt-0 md:flex ${state ? 'block' : 'hidden'} `}>
-                            <ul className="flex-1 justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
-                                {navigation.map((item, idx) => (
-                                    item.dropdown ? (
-                                        <li key={idx} className="relative dropdown-parent text-gray-300 hover:text-gray-400">
-                                            <button
-                                                className="flex items-center gap-1 font-semibold"
-                                                onClick={() => setDropdown(dropdown === idx ? false : idx)}
-                                                onMouseEnter={() => setDropdown(idx)}
-                                                onMouseLeave={() => setDropdown(false)}
-                                            >
-                                                {item.title}
-                                                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                                                </svg>
-                                            </button>
-                                            <AnimatePresence>
-                                                {dropdown === idx && (
-                                                    <motion.ul
-                                                        initial={{ opacity: 0, y: 10 }}
-                                                        animate={{ opacity: 1, y: 0 }}
-                                                        exit={{ opacity: 0, y: 10 }}
-                                                        transition={{ duration: 0.2 }}
-                                                        className="absolute left-0 mt-2 w-56 bg-gray-800 rounded-lg shadow-lg z-30"
-                                                        onMouseEnter={() => setDropdown(idx)}
-                                                        onMouseLeave={() => setDropdown(false)}
-                                                    >
-                                                        {item.dropdown.map((sub, subIdx) => (
-                                                            <li key={subIdx}>
-                                                                <a href={sub.path} className="block px-4 py-2 text-gray-300 hover:bg-sky-500 hover:text-white rounded transition">
-                                                                    {sub.title}
-                                                                </a>
-                                                            </li>
-                                                        ))}
-                                                    </motion.ul>
-                                                )}
-                                            </AnimatePresence>
-                                        </li>
-                                    ) : (
-                                        <li key={idx} className="text-gray-300 hover:text-sky-400 font-semibold transition">
-                                            <a href={item.path} className="block">
-                                                {item.title}
-                                            </a>
-                                        </li>
-                                    )
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-            <section className="relative flex-1 flex items-center justify-center w-full">
-                <ParticlesBG />
-                <div className="relative z-10 w-full max-w-5xl px-4 py-16 md:py-32 text-center flex flex-col items-center justify-center">
-                    <motion.img
-                        src={Logo}
-                        alt="SEMADD logo"
-                        className="mx-auto mb-4 rounded-2xl shadow-2xl p-4"
-                        initial={{ opacity: 0, scale: 0.7, rotate: -10 }}
-                        animate={{ opacity: 1, scale: 1, rotate: 0 }}
-                        transition={{ duration: 1, type: "spring" }}
-                        whileHover={{ scale: 1.08, rotate: 2 }}
-                        width={500}
-                        height={500}
-                    />
-                    <motion.h2
-                        className="text-4xl md:text-6xl text-white font-extrabold mx-auto mb-6 drop-shadow-lg"
-                        initial={{ opacity: 0, y: 40 }}
+    <div className="bg-gray-900 min-h-screen flex flex-col relative overflow-hidden">
+  <header className="w-full">
+    {/* Solo se muestra en móvil cuando el menú está abierto */}
+    <div className={`md:hidden ${state ? "px-4 pb-4" : "hidden"}`}>
+      <Brand />
+    </div>
+
+    <nav className={`w-full pb-5 md:text-sm ${state ? "absolute z-20 top-0 inset-x-0 bg-gray-800 rounded-xl mx-2 mt-2 md:mx-0 md:mt-0 md:relative md:bg-transparent" : ""}`}>
+      <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between px-4 md:flex-nowrap md:px-8">
+        <Brand />
+        <div className={`w-full md:flex md:items-center md:w-auto ${state ? "block mt-4" : "hidden"}`}>
+          <ul className="flex flex-col md:flex-row md:space-x-6 md:space-y-0 space-y-4 text-sm w-full md:w-auto">
+            {navigation.map((item, idx) => (
+              item.dropdown ? (
+                <li key={idx} className="relative dropdown-parent text-gray-300 hover:text-gray-400">
+                  <button
+                    className="flex items-center gap-1 font-semibold w-full md:w-auto"
+                    onClick={() => setDropdown(dropdown === idx ? false : idx)}
+                    onMouseEnter={() => setDropdown(idx)}
+                    onMouseLeave={() => setDropdown(false)}
+                  >
+                    {item.title}
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <AnimatePresence>
+                    {dropdown === idx && (
+                      <motion.ul
+                        initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
-                    >
-                        <span className="text-sky-400">Bienvenidos a SEMADD</span>
-                    </motion.h2>
-                    <motion.p
-                        className="max-w-2xl mx-auto text-gray-300 text-lg md:text-2xl mb-8"
-                        initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
-                    >
-                        <span className="text-sky-400 font-semibold"></span> potenciamos empresas y emprendedores con servicios de branding, diseño web y desarrollo web, publicidad, SEO y más.
-                    </motion.p>
-                </div>
-            </section>
+                        exit={{ opacity: 0, y: 10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute left-0 mt-2 w-56 bg-gray-800 rounded-lg shadow-lg z-30"
+                        onMouseEnter={() => setDropdown(idx)}
+                        onMouseLeave={() => setDropdown(false)}
+                      >
+                        {item.dropdown.map((sub, subIdx) => (
+                          <li key={subIdx}>
+                            <a href={sub.path} className="block px-4 py-2 text-gray-300 hover:bg-sky-500 hover:text-white rounded transition">
+                              {sub.title}
+                            </a>
+                          </li>
+                        ))}
+                      </motion.ul>
+                    )}
+                  </AnimatePresence>
+                </li>
+              ) : (
+                <li key={idx} className="text-gray-300 hover:text-sky-400 font-semibold transition">
+                  <a href={item.path} className="block w-full md:w-auto">{item.title}</a>
+                </li>
+              )
+            ))}
+          </ul>
         </div>
+      </div>
+    </nav>
+  </header>
+
+  {/* Hero Section */}
+  <section className="relative flex-1 flex items-center justify-center w-full px-4  ">
+    <ParticlesBG />
+    <div className="relative z-10 w-full max-w-5xl px-4 py-16 md:py-32 text-center flex flex-col items-center justify-center">
+      <motion.img
+        src={Logo}
+        alt="SEMADD logo"
+        className="mx-auto mb-4 rounded-2xl shadow-2xl p-4 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px]"
+        initial={{ opacity: 0, scale: 0.7, rotate: -10 }}
+        animate={{ opacity: 1, scale: 1, rotate: 0 }}
+        transition={{ duration: 1, type: "spring" }}
+        whileHover={{ scale: 1.08, rotate: 2 }}
+      />
+      <motion.h2
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-extrabold mb-6 drop-shadow-lg"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
+      >
+        <span className="text-sky-400">Bienvenidos a SEMADD</span>
+      </motion.h2>
+      <motion.p
+        className="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg md:text-xl lg:text-2xl mb-8 text-justify"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
+      >
+        <span className="font-semibold">
+          Acompañamos a empresas y emprendimientos en su proceso de transformación digital mediante la creación de branding, marketing digital, asesorías, diseño y desarrollo de sitios web empresariales.
+        </span>
+      </motion.p>
+    </div>
+
+   <div className="hidden md:block">
+  <Carrousell />
+</div>
+  </section>
+</div>
+
     );
 }
