@@ -5,6 +5,11 @@ export function AboutSemadd() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const reasons = [
+       {
+      title: "Velocidad y optimización superior",
+      content:
+        "Sitios rápidos, seguros y optimizados para buscadores.",
+    },
     {
       title: "Sin plantillas genéricas",
       content:
@@ -20,11 +25,7 @@ export function AboutSemadd() {
       content:
         "Creamos soluciones que crecen con vos desde landing pages hasta sistemas completos de gestión.",
     },
-    {
-      title: "Velocidad y optimización superior",
-      content:
-        "Sitios rápidos, seguros y optimizados para buscadores.",
-    },
+ 
 {
   title: "Identidad coherente",
   content:
