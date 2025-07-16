@@ -14,7 +14,7 @@ export function Team() {
     },
     {
       avatar:Foto2 ,
-      name: "Pedro Antonio Castillo TorreZ",
+      name: "Pedro Antonio Castillo Torrez",
       title: "CEO de SEMADD",
       desc: "Fundador de SEMADD, una empresa especializada en el desarrollo de soluciones digitales innovadoras que impulsan la transformación tecnológica de emprendedores, pymes y empresas.",
       linkedin: "javascript:void(0)",
