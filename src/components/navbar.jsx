@@ -85,8 +85,8 @@ export function Nav() {
         {
             title: "Nosotros",
             dropdown: [
-                { title: "Misión", path: "/about" },
-                { title: "Visión", path: "/about" }
+                { title: "Misión y Visión", path: "/about" },
+               
             ]
         },
         {
