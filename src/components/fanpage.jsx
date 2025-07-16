@@ -5,6 +5,12 @@ export function AboutSemadd() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const reasons = [
+
+    {
+  title: "Identidad coherente",
+  content:
+    "Combinamos diseño web y branding para que todo se vea conectado, profesional y auténtico a tu marca, porque tú lo mereces.",
+},
        {
       title: "Velocidad y optimización superior",
       content:
@@ -26,11 +32,7 @@ export function AboutSemadd() {
         "Creamos soluciones que crecen con vos desde landing pages hasta sistemas completos de gestión.",
     },
  
-{
-  title: "Identidad coherente",
-  content:
-    "Combinamos diseño web y branding para que todo se vea conectado, profesional y auténtico a tu marca, porque tú lo mereces.",
-}
+
   ];
 
   return (

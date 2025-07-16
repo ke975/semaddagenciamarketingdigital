@@ -10,21 +10,21 @@ const categorizedPosts = [
         title: "Start Web",
         desc: "Pagina web básica con diseño responsivo, formulario de contacto y SEO inicial.",
         img: "https://cdn-icons-png.flaticon.com/512/3185/3185774.png",
-        date: "Desde US$ 400",
+      
         href: "#",
       },
       {
         title: "Pro Web",
         desc: "pagina web con funcionalidades avanzadas para comercios que desean realizar ventas en linea a traves de pasarelas de pagos.",
         img: "https://cdn-icons-png.flaticon.com/512/9743/9743831.png",
-        date: "Desde US$ 850",
+        
         href: "#",
       },
       {
         title: "Web Avanzada Escalable",
         desc: "Sistema de facturación con roles avanzados, permisos, modulo de caja, proveedores, clientes, ventas, finanzas y mucho más.",
         img: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
-        date: "Desde US$ 1200",
+        
         href: "#",
       },
     ],
@@ -36,21 +36,21 @@ const categorizedPosts = [
         title: "Taller: Digitalízate Ya",
         desc: "3 horas de introducción a marketing digital, funnels y herramientas clave.",
         img: "https://cdn-icons-png.flaticon.com/512/10498/10498182.png",
-        date: "US$ 25/pax",
+      
         href: "#",
       },
       {
         title: "Asesoría Personalizada",
         desc: "Sesiones 1 a 1 por Zoom o presencial, estrategias de marketing digital, campañas y redes sociales.",
         img: "https://cdn-icons-png.flaticon.com/512/3871/3871730.png",
-        date: "US$ 50/hora",
+        
         href: "#",
       },
       {
         title: "Taller para Empresas",
         desc: "Capacitación para empresas de hasta 10 personas con plan de acción digital.",
         img: "https://cdn-icons-png.flaticon.com/512/4020/4020290.png",
-        date: "US$ 200",
+      
         href: "#",
       },
     ],
@@ -62,21 +62,21 @@ const categorizedPosts = [
         title: "Marca Base",
         desc: "Logo + paleta + tipografía + archivos para RRSS, favicon y firma digital.",
         img: "https://cdn-icons-png.flaticon.com/512/10498/10498183.png",
-        date: "US$ 120",
+        
         href: "#",
       },
       {
         title: "Marca Pro",
         desc: "Logo + manual de marca básico + papelería digital + plantilla editable para redes.",
         img: "https://cdn-icons-png.flaticon.com/512/864/864685.png",
-        date: "US$ 250",
+        
         href: "#",
       },
       {
         title: "Identidad Total",
         desc: "Investigación, logo, manual de marca completo, papelería, redes, mockups y más.",
         img: "https://cdn-icons-png.flaticon.com/512/10884/10884795.png",
-        date: "US$ 400",
+        
         href: "#",
       },
     ],
