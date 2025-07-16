@@ -10,7 +10,7 @@ export function Cta() {
           </h2>
 
           <p className="text-lg text-gray-300">
-            Desarrollo web, branding y estrategias digitales a medida para empresas que quieren destacar online.
+            Desarrollo web, branding, marketing digital y estrategias digitales a medida para empresas que quieren destacar online.
           </p>
 
           {/* Teléfonos en fila */}

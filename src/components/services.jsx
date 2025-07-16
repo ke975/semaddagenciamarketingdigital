@@ -8,21 +8,21 @@ const categorizedPosts = [
     items: [
       {
         title: "Start Web",
-        desc: "Pagina web básica con diseño responsivo, formulario de contacto y SEO inicial.",
+        desc: "Pagina web básica con diseño responsivo, formulario de contacto y SEO inicial. Ideal para emprendedores y Pymes que inician su presencia online.",
         img: "https://cdn-icons-png.flaticon.com/512/3185/3185774.png",
       
         href: "#",
       },
       {
         title: "Pro Web",
-        desc: "pagina web con funcionalidades avanzadas para comercios que desean realizar ventas en linea a traves de pasarelas de pagos.",
+        desc: "pagina web con funcionalidades avanzadas para comercios que desean realizar ventas en linea a traves de pasarelas de pagos.Empresas en Crecimiento que necesitan una web profesional y optimizada.",
         img: "https://cdn-icons-png.flaticon.com/512/9743/9743831.png",
         
         href: "#",
       },
       {
         title: "Web Avanzada Escalable",
-        desc: "Sistema de facturación con roles avanzados, permisos, modulo de caja, proveedores, clientes, ventas, finanzas y mucho más.",
+        desc: "Sistema de facturación con roles avanzados, permisos, modulo de caja, proveedores, clientes, ventas, finanzas y mucho más. Ideal para empresas que necesitan un sistema completo y personalizado.",
         img: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
         
         href: "#",
@@ -34,21 +34,21 @@ const categorizedPosts = [
     items: [
       {
         title: "Taller: Digitalízate Ya",
-        desc: "3 horas de introducción a marketing digital, funnels y herramientas clave.",
+        desc: "3 horas de introducción a marketing digital, funnels y herramientas clave. Ideal para emprendedores que quieren aprender a vender online.",
         img: "https://cdn-icons-png.flaticon.com/512/10498/10498182.png",
       
         href: "#",
       },
       {
         title: "Asesoría Personalizada",
-        desc: "Sesiones 1 a 1 por Zoom o presencial, estrategias de marketing digital, campañas y redes sociales.",
+        desc: "Sesiones 1 a 1 por Zoom o presencial, estrategias de marketing digital, campañas y redes sociales. Ideal para emprendedores y empresas que buscan mejorar su presencia digital.",
         img: "https://cdn-icons-png.flaticon.com/512/3871/3871730.png",
         
         href: "#",
       },
       {
         title: "Taller para Empresas",
-        desc: "Capacitación para empresas de hasta 10 personas con plan de acción digital.",
+        desc: "Capacitación para empresas de hasta 10 personas con plan de acción digital. Ideal para equipos que quieren aprender a implementar estrategias digitales efectivas.",
         img: "https://cdn-icons-png.flaticon.com/512/4020/4020290.png",
       
         href: "#",
