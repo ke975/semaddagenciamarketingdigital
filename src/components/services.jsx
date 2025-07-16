@@ -8,14 +8,14 @@ const categorizedPosts = [
     items: [
       {
         title: "Start Web",
-        desc: "Pagina web básica con diseño responsivo, formulario de contacto y SEO inicial. Ideal para emprendedores y Pymes que inician su presencia online.",
+        desc: "Página web básica con diseño responsivo, formulario de contacto y SEO inicial. Ideal para emprendedores y Pymes que inician su presencia online.",
         img: "https://cdn-icons-png.flaticon.com/512/3185/3185774.png",
       
         href: "#",
       },
       {
         title: "Pro Web",
-        desc: "pagina web con funcionalidades avanzadas para comercios que desean realizar ventas en linea a traves de pasarelas de pagos.Empresas en Crecimiento que necesitan una web profesional y optimizada.",
+        desc: "Página web con funcionalidades avanzadas para comercios que desean realizar ventas en linea a traves de pasarelas de pagos.Empresas en Crecimiento que necesitan una web profesional y optimizada.",
         img: "https://cdn-icons-png.flaticon.com/512/9743/9743831.png",
         
         href: "#",
