@@ -23,7 +23,7 @@ export function Team() {
   ];
 
   return (
-    <section className="py-20 w-full flex flex-col items-center py-16 bg-gradient-to-b from-gray-800 via-gray-900 to-gray-950 relative overflow-hidden">
+    <section className="py-20 w-full flex flex-col items-center py-16 bg-gradient-to-b from-gray-800 via-gray-900 to-gray-950 relative overflow-hidden" id="Team">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h3 className="text-white text-4xl font-extrabold sm:text-5xl">
           Conocé a nuestro equipo

@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 
-
-
 const categorizedPosts = [
   {
     category: "Desarrollo Web",
@@ -9,22 +7,19 @@ const categorizedPosts = [
       {
         title: "Start Web",
         desc: "Página web básica con diseño responsivo, formulario de contacto y SEO inicial. Ideal para emprendedores y Pymes que inician su presencia online.",
-        img: "https://cdn-icons-png.flaticon.com/512/3185/3185774.png",
-      
+        img: "https://cdn-icons-png.flaticon.com/512/3185/3185774.png", // monitor con código
         href: "#",
       },
       {
         title: "Pro Web",
-        desc: "Página web con funcionalidades avanzadas para comercios que desean realizar ventas en linea a traves de pasarelas de pagos.Empresas en Crecimiento que necesitan una web profesional y optimizada.",
-        img: "https://cdn-icons-png.flaticon.com/512/9743/9743831.png",
-        
+        desc: "Página web con funcionalidades avanzadas para comercios que desean realizar ventas en línea. Ideal para empresas en crecimiento.",
+        img: "https://images.icon-icons.com/3559/PNG/512/shirt_online_store_ecommerce_commerce_marketplace_website_shopping_clothing_icon_225154.png", // carrito e-commerce
         href: "#",
       },
       {
         title: "Web Avanzada Escalable",
-        desc: "Sistema de facturación con roles avanzados, permisos, modulo de caja, proveedores, clientes, ventas, finanzas y mucho más. Ideal para empresas que necesitan un sistema completo y personalizado.",
-        img: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
-        
+        desc: "Sistema de facturación completo con roles, caja, proveedores, clientes, ventas, finanzas y más. Para empresas que necesitan un sistema personalizado.",
+        img: "https://images.icon-icons.com/4260/PNG/512/web_graphic_infographic_website_time_icon_265383.png", // engranaje y red
         href: "#",
       },
     ],
@@ -35,22 +30,19 @@ const categorizedPosts = [
       {
         title: "Taller: Digitalízate Ya",
         desc: "3 horas de introducción a marketing digital, funnels y herramientas clave. Ideal para emprendedores que quieren aprender a vender online.",
-        img: "https://cdn-icons-png.flaticon.com/512/10498/10498182.png",
-      
+        img: "https://images.icon-icons.com/3780/PNG/512/presentation_office_meeting_business_discussion_people_conference_communication_user_group_icon_231917.png", // presentación
         href: "#",
       },
       {
         title: "Asesoría Personalizada",
-        desc: "Sesiones 1 a 1 por Zoom o presencial, estrategias de marketing digital, campañas y redes sociales. Ideal para emprendedores y empresas que buscan mejorar su presencia digital.",
-        img: "https://cdn-icons-png.flaticon.com/512/3871/3871730.png",
-        
+        desc: "Sesiones 1 a 1 por Zoom o presencial. Estrategias de marketing, campañas y redes sociales para empresas y emprendedores.",
+        img: "https://images.icon-icons.com/3780/PNG/512/pie_diagram_finance_statistics_report_analytics_business_graph_chart_presentation_icon_231899.png", // asesoría
         href: "#",
       },
       {
         title: "Taller para Empresas",
-        desc: "Capacitación para empresas de hasta 10 personas con plan de acción digital. Ideal para equipos que quieren aprender a implementar estrategias digitales efectivas.",
-        img: "https://cdn-icons-png.flaticon.com/512/4020/4020290.png",
-      
+        desc: "Capacitación para empresas con plan de acción digital. Ideal para equipos que quieren implementar estrategias digitales efectivas.",
+        img: "https://images.icon-icons.com/2076/PNG/512/business_chart_finance_pie_statistics_icon_127241.png", // junta empresarial
         href: "#",
       },
     ],
@@ -60,23 +52,20 @@ const categorizedPosts = [
     items: [
       {
         title: "Marca Base",
-        desc: "Logo + paleta + tipografía + archivos para RRSS, favicon y firma digital.",
-        img: "https://cdn-icons-png.flaticon.com/512/10498/10498183.png",
-        
+        desc: "Logo, paleta de colores, tipografía, archivos para RRSS, favicon y firma digital.",
+        img: "https://images.icon-icons.com/537/PNG/96/paint-brush-2_icon-icons.com_52930.png", // branding básico
         href: "#",
       },
       {
         title: "Marca Pro",
-        desc: "Logo + manual de marca básico + papelería digital + plantilla editable para redes.",
-        img: "https://cdn-icons-png.flaticon.com/512/864/864685.png",
-        
+        desc: "Logo, manual básico de marca, papelería digital y plantillas editables para redes.",
+        img: "https://images.icon-icons.com/2064/PNG/96/paint_colour_graphic_design_icon_124731.png", // papelería
         href: "#",
       },
       {
         title: "Identidad Total",
-        desc: "Investigación, logo, manual de marca completo, papelería, redes, mockups y más.",
-        img: "https://cdn-icons-png.flaticon.com/512/10884/10884795.png",
-        
+        desc: "Investigación, logo, manual completo, papelería, redes sociales, mockups y más.",
+        img: "https://images.icon-icons.com/537/PNG/96/laptop_icon-icons.com_52935.png", // identidad corporativa
         href: "#",
       },
     ],
@@ -108,29 +97,27 @@ export function Services() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: idx * 0.1 }}
-                  className="bg-steal-200 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 group cursor-pointer border border-gray-200 hover:border-white"
                 >
-                  <a href={item.href} className="block p-6">
-                    <div className="flex justify-center">
-                      <img
-                        src={item.img}
-                        alt={item.title}
-                        className="h-40 w-40 object-contain transition-transform duration-300 group-hover:scale-110"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="mt-6 space-y-2">
-                      <span className="inline-block text-white font-semibold text-sm tracking-wide">
-                        {item.date}
-                      </span>
-                      <h3 className="text-xl font-semibold text-white group-hover:text-white transition-colors duration-200">
-                        {item.title}
-                      </h3>
-                      <p className="text-white text-sm leading-relaxed group-hover:text-white transition-colors duration-200">
-                        {item.desc}
-                      </p>
-                    </div>
-                  </a>
+                  <article className="bg-slate-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-700 hover:border-white">
+                    <a href={item.href} className="block p-6 h-full">
+                      <div className="flex justify-center">
+                        <img
+                          src={item.img}
+                          alt={item.title}
+                          className="h-36 w-36 object-contain transition-transform duration-300 group-hover:scale-110"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div className="mt-6 space-y-2 text-center">
+                        <h3 className="text-xl font-bold text-white group-hover:text-indigo-400">
+                          {item.title}
+                        </h3>
+                        <p className="text-gray-300 text-sm leading-relaxed">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </a>
+                  </article>
                 </motion.li>
               ))}
             </ul>
