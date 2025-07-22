@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Footer } from "../components/Footer";
 import { Link } from "react-router-dom";
 
-export function ProWeb() {
+export function MarcaPro() {
   return (
     <>
       <section className="py-24 min-h-screen bg-gradient-to-b from-gray-900 via-gray-950 to-black text-white">
@@ -18,25 +18,24 @@ export function ProWeb() {
               <div className="text-center md:text-left">
                 <div className="flex justify-center md:justify-start mb-6">
                   <img
-                    src="https://images.icon-icons.com/3559/PNG/512/shirt_online_store_ecommerce_commerce_marketplace_website_shopping_clothing_icon_225154.png"
-                    alt="Pro Web"
+                    src="https://images.icon-icons.com/2064/PNG/96/paint_colour_graphic_design_icon_124731.png"
+                    alt="Marca Pro"
                     className="h-36 w-36 object-contain drop-shadow-md hover:scale-110 transition-transform"
                   />
                 </div>
 
                 <h1 className="text-5xl font-extrabold text-sky-400 mb-4 tracking-tight">
-                  Pro Web
+                  Marca Pro
                 </h1>
 
-                <h2 className="text-2xl font-bold text-white mb-2">Desde</h2>
-                <p className="text-3xl text-sky-400 font-bold mb-6">US$ 850</p>
+                <h2 className="text-2xl font-bold text-white mb-2">Precio</h2>
+                <p className="text-3xl text-sky-400 font-bold mb-6">US$ 250</p>
 
                 <h4 className="text-xl font-semibold text-white mb-2">
                   Planes de Pago
                 </h4>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  60% al inicio, 40% en 30 días. <br />
-                  Consultar por opciones de financiamiento sin intereses.
+                  50% al inicio, 50% al entregar el manual. Opciones de pago mensual disponibles.
                 </p>
 
                 <motion.div
@@ -56,20 +55,17 @@ export function ProWeb() {
               {/* Columna Derecha */}
               <div>
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  Ideal para negocios que quieren vender online con un sitio
-                  completo y funcional. Incluye diseño responsive, pasarela de
-                  pagos integrada y todas las herramientas necesarias para
-                  comenzar a vender en internet de forma segura y profesional.
+                  Logo profesional, papelería digital completa, manual de uso detallado
+                  y plantillas editables para mantener la coherencia visual de tu marca.
                 </p>
 
                 <ul className="space-y-4 text-gray-400 text-sm leading-relaxed">
-                  <li>✅ Catálogo de productos autogestionable.</li>
-                  <li>✅ Integración con pasarela de pago (MercadoPago, Stripe, PayPal).</li>
-                  <li>✅ Página de inicio + tienda + contacto + políticas.</li>
-                  <li>✅ Hosting y dominio por 1 año incluidos.</li>
-                  <li>✅ Integración con WhatsApp y redes sociales.</li>
-                  <li>✅ Certificado SSL y sitio seguro (HTTPS).</li>
-                  <li>✅ Entrega en 10-15 días hábiles.</li>
+                  <li>✅ Diseño de logo avanzado y moderno.</li>
+                  <li>✅ Papelería digital para impresión y web.</li>
+                  <li>✅ Manual de identidad visual completo.</li>
+                  <li>✅ Plantillas editables para redes sociales y documentos.</li>
+                  <li>✅ Soporte y asesoría para implementación.</li>
+                  <li>✅ Entrega profesional y garantía de satisfacción.</li>
                 </ul>
               </div>
             </div>

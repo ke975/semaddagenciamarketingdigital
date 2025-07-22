@@ -92,15 +92,15 @@ export function Nav() {
         {
             title: "Servicios",
             dropdown: [
-                { title: "Start web", path: "/services" },
-                { title: "Pro Web", path: "/services" },
-                { title: "Web Avanzada Escalable", path: "/services" },
-                { title: "Taller Digitalizate", path: "/services" },
-                { title: "Asesoría Personalizada", path: "/services" },
-                { title: "Taller Para Equipos", path: "/services" },
-                { title: "Marca Base", path: "/services" },
-                { title: "Marca Pro", path: "/services" },
-                { title: "Identidad Total", path: "/services" }
+                { title: "Start web", path: "/start-web" },
+                { title: "Pro Web", path: "/pro-web" },
+                { title: "Web Avanzada Escalable", path: "/web-avanzada" },
+                { title: "Taller Digitalizate", path: "/taller-digitalizate" },
+                { title: "Asesoría Personalizada", path: "/asesoria" },
+                { title: "Taller Para Equipos", path: "/taller-empresas" },
+                { title: "Marca Base", path: "/MarcaBase" },
+                { title: "Marca Pro", path: "/marca-pro" },
+                { title: "Identidad Total", path: "/identidad-total" }
             ]
         },
         { title: "Contáctanos", path: "/contact" }

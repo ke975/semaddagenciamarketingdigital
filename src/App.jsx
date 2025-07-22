@@ -11,7 +11,8 @@ import { TallerDitalizate } from "./pages/TallerDigitalizate";
 import { Asesoria } from "./pages/Asesoria";
 import { TallerEmpresas } from "./pages/TallerEmpresas";
 import { MarcaBase } from "./pages/MarcaBase";
-
+import { MarcaPro } from "./pages/MarcaPro";
+import { IdentidadTotal } from "./pages/IdentidadTotal";
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
         <Route path="/asesoria" element={<Asesoria />} />
         <Route path="/taller-empresas" element={<TallerEmpresas />} />
         <Route path="/MarcaBase" element={<MarcaBase />} />
+        <Route path="/marca-pro" element={<MarcaPro />} />
+        <Route path="/identidad-total" element={<IdentidadTotal />} />
         {/* Agrega más rutas según sea necesario */}
       </Routes>
     </BrowserRouter>
