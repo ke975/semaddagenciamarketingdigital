@@ -214,7 +214,7 @@ export function NavContact() {
     <ParticlesBG />
   
 
-   <div className="hidden md:block">
+   <div className="">
   <ImportanceChart />
 </div>
   </section>

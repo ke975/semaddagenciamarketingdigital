@@ -212,7 +212,7 @@ export function NavContactForm() {
     <ParticlesBG />
    
 
-   <div className="hidden md:block">
+   <div className="">
   <ContactForm />
 </div>
   </section>
