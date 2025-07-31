@@ -1,6 +1,5 @@
-import { Nav } from "../components/navbar";
+import { NavContact } from "../components/NavContact";
 import { Footer } from "../components/Footer";
-import {ImportanceChart} from "../components/Chart";
 import sectionImage from "../assets/Section.png"; // Importación correcta
 import section3 from "../assets/Section3.png"; //
 
@@ -28,8 +27,7 @@ export function About() {
   return (
     <>
     
-<Nav />
-<ImportanceChart/>
+<NavContact />
       <Footer/>
 
     <WhatsAppFloatingButton />
