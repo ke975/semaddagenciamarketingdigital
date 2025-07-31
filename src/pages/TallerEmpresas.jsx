@@ -55,8 +55,8 @@ export function TallerEmpresas() {
               {/* Columna Derecha */}
               <div>
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  Capacitación especializada para equipos empresariales en herramientas digitales
-                  y marketing, diseñada para mejorar la productividad y estrategias comerciales.
+                   Esta capacitación está pensada para empresas que desean potenciar las habilidades digitales de sus equipos. Con enfoque práctico y personalizado, <strong>Semadd</strong> brinda formación en herramientas de marketing, productividad y estrategia digital, adaptadas a las necesidades específicas del negocio. Ideal para mejorar procesos, aumentar el rendimiento y fortalecer la presencia online de forma profesional.
+
                 </p>
 
                 <ul className="space-y-4 text-gray-400 text-sm leading-relaxed">

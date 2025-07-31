@@ -56,10 +56,8 @@ export function ProWeb() {
               {/* Columna Derecha */}
               <div>
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  Ideal para negocios que quieren vender online con un sitio
-                  completo y funcional. Incluye diseño responsive, pasarela de
-                  pagos integrada y todas las herramientas necesarias para
-                  comenzar a vender en internet de forma segura y profesional.
+                  Este servicio es la mejor opción para quienes buscan vender en línea sin complicaciones técnicas. Al contar con una tienda virtual bien diseñada, segura y profesional, tus clientes podrán comprar tus productos o servicios con confianza. Además, <strong>Semadd</strong> se encarga de integrar todas las herramientas necesarias para que tu negocio funcione 24/7, ayudándote a aumentar tus ventas, expandir tu mercado y posicionar tu marca en el entorno digital.
+
                 </p>
 
                 <ul className="space-y-4 text-gray-400 text-sm leading-relaxed">

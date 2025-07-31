@@ -56,9 +56,8 @@ export function WebEscalable() {
               {/* Columna Derecha */}
               <div>
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  Este plan es ideal para empresas o emprendimientos que necesitan
-                  una solución avanzada, con arquitectura escalable, funcionalidades
-                  personalizadas y herramientas de gestión integradas.
+                    Este servicio es perfecto para quienes buscan más que una simple página web. Está diseñado para empresas con visión de crecimiento que necesitan soluciones digitales robustas, eficientes y preparadas para escalar. Con <strong>Semadd</strong>, obtenés una plataforma hecha a medida, adaptable a tus procesos internos, con funcionalidades específicas que optimizan tu gestión y mejoran la experiencia del usuario. Ideal para quienes quieren destacarse en su sector con tecnología de alto nivel.
+
                 </p>
 
                 <ul className="space-y-4 text-gray-400 text-sm leading-relaxed">

@@ -55,8 +55,8 @@ export function MarcaBase() {
               {/* Columna Derecha */}
               <div>
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  Incluye diseño de logo, paleta de colores, tipografía, archivos para redes sociales,
-                  favicon y firma digital para fortalecer la identidad visual de tu marca.
+                   Este servicio de branding integral está pensado para fortalecer la identidad visual de tu marca desde la base. Incluye el diseño de un logotipo profesional, paleta de colores, selección tipográfica, favicon, firma digital y archivos adaptados para redes sociales. Con <strong>Semadd</strong>, tu marca tendrá una imagen coherente, moderna y lista para destacar en cualquier plataforma.
+
                 </p>
 
                 <ul className="space-y-4 text-gray-400 text-sm leading-relaxed">

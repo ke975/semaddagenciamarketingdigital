@@ -56,11 +56,8 @@ export function StartWeb() {
               {/* Columna Derecha - Descripción y Detalles */}
               <div>
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  La opción perfecta para emprendedores, profesionales y
-                  pequeñas empresas que desean tener presencia online de forma
-                  rápida y efectiva. Este paquete incluye el diseño y
-                  desarrollo de una página web responsive, optimizada para
-                  buscadores (SEO) y con una interfaz moderna y adaptable.
+                    Este servicio es ideal porque combina rapidez, calidad y estrategia. Con una presencia online profesional, tus clientes te encontrarán más fácilmente, generando confianza y aumentando tus oportunidades de venta. Además, contarás con el respaldo de <strong>Semadd, una agencia especializada en Marketing, Diseño y Desarrollo Web Empresarial</strong>, comprometida con el crecimiento digital de tu proyecto.
+
                 </p>
 
                 <ul className="space-y-4 text-gray-400 text-sm leading-relaxed">

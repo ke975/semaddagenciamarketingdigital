@@ -55,8 +55,8 @@ export function Asesoria() {
               {/* Columna Derecha */}
               <div>
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  Sesiones 1 a 1 por Zoom o presencial. Estrategias de marketing, campañas
-                  y redes sociales para empresas y emprendedores.
+                    Este servicio de asesoría personalizada 1 a 1 por Zoom o presencial está diseñado para empresas y emprendedores que desean optimizar sus estrategias de marketing digital. Con <strong>Semadd</strong>, recibirás orientación experta en campañas, posicionamiento y redes sociales, todo adaptado a tus objetivos y al mercado actual. Ideal para quienes buscan resultados concretos con acompañamiento profesional.
+
                 </p>
 
                 <ul className="space-y-4 text-gray-400 text-sm leading-relaxed">

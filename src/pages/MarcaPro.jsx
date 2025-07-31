@@ -55,8 +55,8 @@ export function MarcaPro() {
               {/* Columna Derecha */}
               <div>
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  Logo profesional, papelería digital completa, manual de uso detallado
-                  y plantillas editables para mantener la coherencia visual de tu marca.
+                   Un paquete profesional que incluye un logo diseñado a la medida, papelería digital completa, un manual de uso detallado y plantillas editables. Todo lo necesario para que tu marca mantenga una imagen consistente y sólida en todos sus canales y comunicaciones.
+
                 </p>
 
                 <ul className="space-y-4 text-gray-400 text-sm leading-relaxed">

@@ -55,9 +55,8 @@ export function TallerDitalizate() {
               {/* Columna Derecha */}
               <div>
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  Taller intensivo de 3 horas donde aprenderás los fundamentos
-                  del marketing digital, embudos de ventas y herramientas clave
-                  para impulsar tu negocio en internet.
+                  Este taller está diseñado para emprendedores, marcas personales y pequeños negocios que quieren entender y aplicar estrategias digitales de forma clara y efectiva. En solo 3 horas, obtendrás conocimientos prácticos que podés aplicar de inmediato para atraer clientes, mejorar tu presencia online y aumentar tus ventas. Con <strong>Semadd</strong>, aprendés de forma intensiva, directa y enfocada en resultados reales.
+
                 </p>
 
                 <ul className="space-y-4 text-gray-400 text-sm leading-relaxed">

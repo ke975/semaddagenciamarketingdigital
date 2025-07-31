@@ -55,8 +55,8 @@ export function IdentidadTotal() {
               {/* Columna Derecha */}
               <div>
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  Estudio de mercado, manual completo de identidad, manejo de redes sociales,
-                  definición de tono de voz y otros elementos para una marca coherente y profesional.
+                    Un estudio de mercado detallado acompañado de un manual completo de identidad, gestión estratégica de redes sociales, definición clara del tono de voz y otros elementos esenciales para construir una marca coherente, profesional y reconocible.
+
                 </p>
 
                 <ul className="space-y-4 text-gray-400 text-sm leading-relaxed">
