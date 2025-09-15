@@ -98,9 +98,7 @@ export function Nav() {
                 { title: "Taller Digitalizate", path: "/taller-digitalizate" },
                 { title: "Asesoría Personalizada", path: "/asesoria" },
                 { title: "Taller Para Equipos", path: "/taller-empresas" },
-                { title: "Marca Base", path: "/MarcaBase" },
-                { title: "Marca Pro", path: "/marca-pro" },
-                { title: "Identidad Total", path: "/identidad-total" }
+                
             ]
         },
         { title: "Contáctanos", path: "/contact" }

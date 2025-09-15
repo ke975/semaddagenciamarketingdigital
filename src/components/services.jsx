@@ -48,6 +48,27 @@ const categorizedPosts = [
     ],
   },
   {
+    category: "Creación de marca (Branding)",
+    items: [
+      {
+        title: "Marca Base",
+        desc: "Logo, paleta de colores, tipografía, archivos para RRSS, favicon y firma digital.",
+        img: "https://images.icon-icons.com/537/PNG/96/paint-brush-2_icon-icons.com_52930.png", // branding básico
+        href: "/MarcaBase",
+      },
+      {
+        title: "Marca Pro",
+        desc: "Logo, manual básico de marca, papelería digital y plantillas editables para redes.",
+        img: "https://images.icon-icons.com/2064/PNG/96/paint_colour_graphic_design_icon_124731.png", // papelería
+        href: "/marca-pro",
+      },
+      {
+        title: "Identidad Total",
+        desc: "Investigación, logo, manual completo, papelería, redes sociales, mockups y más.",
+        img: "https://images.icon-icons.com/537/PNG/96/laptop_icon-icons.com_52935.png", // identidad corporativa
+        href: "/Identidad-Total",
+      },
+    ],
   },
 ];
 
