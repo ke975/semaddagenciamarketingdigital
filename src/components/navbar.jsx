@@ -246,7 +246,7 @@ export function Nav() {
     
     Desarrollamos <strong>software a medida</strong>, <strong>sistemas empresariales</strong>, <strong>aplicaciones móviles</strong> y
     <strong> automatizaciones inteligentes</strong> que eliminan procesos manuales, optimizan la operación
-    y convierten tu negocio en una empresa eficeinte y rentable.
+    y convierten tu negocio en una empresa eficiente y rentable.
    
    <br />
     <strong>
