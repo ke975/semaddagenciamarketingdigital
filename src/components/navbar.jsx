@@ -238,7 +238,7 @@ export function Nav() {
     </div>
 
    <div className="hidden md:block">
-  <Carrousell />
+
 </div>
   </section>
 </div>
