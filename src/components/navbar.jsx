@@ -215,7 +215,7 @@ export function Nav() {
     <motion.img
       src={Logo}
       alt="SEMADD logo"
-      className="mb-6 rounded-2xl shadow-2xl p-4 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px]"
+      className="mb-3 rounded-2xl shadow-2xl p-4 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px]"
       initial={{ opacity: 0, scale: 0.7, rotate: -10 }}
       animate={{ opacity: 1, scale: 1, rotate: 0 }}
       transition={{ duration: 1, type: "spring" }}
@@ -246,8 +246,9 @@ export function Nav() {
     
     Desarrollamos <strong>software a medida</strong>, <strong>sistemas empresariales</strong>, <strong>aplicaciones móviles</strong> y
     <strong> automatizaciones inteligentes</strong> que eliminan procesos manuales, optimizan la operación
-    y permiten que tu negocio en una empresa eficeinte y rentable.
+    y convierten tu negocio en una empresa eficeinte y rentable.
    
+   <br />
     <strong>
       Agenda hoy una asesoría gratuita.
     </strong>
@@ -255,7 +256,7 @@ export function Nav() {
 
   {/* ESPACIO LISTO PARA VIDEO */}
   <div className="relative z-10 w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
-    {/* <iframe /> o <video /> */}
+     <iframe src="" />
   </div>
 
 </section>
