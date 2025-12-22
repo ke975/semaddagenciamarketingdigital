@@ -256,7 +256,7 @@ export function Nav() {
 
   {/* ESPACIO LISTO PARA VIDEO */}
   <div className="relative z-10 w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
-     <iframe src="" />
+     <iframe src="https://www.youtube.com/watch?v=epNnZ9UHKOs" />
   </div>
 
 </section>
