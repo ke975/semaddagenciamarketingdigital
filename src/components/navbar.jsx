@@ -243,13 +243,13 @@ export function Nav() {
   {/* TEXTO PARA VIDEO */}
   <span className="relative z-10 max-w-4xl text-center text-white text-base sm:text-lg md:text-xl leading-relaxed mb-8">
     Digitalizamos y automatizamos tu empresa para que sea más eficiente, competitiva y rentable.
-    <br /><br />
+    
     Desarrollamos <strong>software a medida</strong>, <strong>sistemas empresariales</strong>, <strong>aplicaciones móviles</strong> y
-    <strong> automatizaciones inteligentes</strong> que eliminan tareas repetitivas, optimizan la operación
-    y permiten que tu negocio crezca con control y tecnología.
-    <br /><br />
+    <strong> automatizaciones inteligentes</strong> que eliminan procesos manuales, optimizan la operación
+    y permiten que tu negocio en una empresa eficeinte y rentable.
+   
     <strong>
-      Agenda hoy una asesoría gratuita y descubre cómo llevar tu empresa al siguiente nivel.
+      Agenda hoy una asesoría gratuita.
     </strong>
   </span>
 
