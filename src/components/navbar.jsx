@@ -222,13 +222,7 @@ export function Nav() {
       whileHover={{ scale: 1.08, rotate: 2 }}
     />
 
-    <motion.h2
-      className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-extrabold mb-6 drop-shadow-lg text-center"
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
-    >
-    </motion.h2>
+   
 
     <motion.p
       className="max-w-2xl text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-10 text-center"
