@@ -207,40 +207,45 @@ export function Nav() {
   </header>
 
   {/* Hero Section */}
-  <section className="relative flex-1 flex items-center justify-center w-full px-4  ">
-    <ParticlesBG />
-    <div className="relative z-10 w-full max-w-5xl px-4 py-16 md:py-32 text-center flex flex-col items-center justify-center">
-      <motion.img
-        src={Logo}
-        alt="SEMADD logo"
-        className="mx-auto mb-4 rounded-2xl shadow-2xl p-4 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px]"
-        initial={{ opacity: 0, scale: 0.7, rotate: -10 }}
-        animate={{ opacity: 1, scale: 1, rotate: 0 }}
-        transition={{ duration: 1, type: "spring" }}
-        whileHover={{ scale: 1.08, rotate: 2 }}
-      />
-      <motion.h2
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-extrabold mb-6 drop-shadow-lg"
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
-      >
-   
-      </motion.h2>
-      <motion.p
-        className="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg md:text-xl lg:text-2xl mb-8 text-justify"
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
-      >
-       
-      </motion.p>
-    </div>
+ <section className="relative w-full flex flex-col items-center justify-center px-4">
+  <ParticlesBG />
 
-   <div className="hidden md:block">
+  <div className="relative z-10 w-full max-w-5xl px-4 py-16 md:py-32 text-center flex flex-col items-center">
+    
+    <motion.img
+      src={Logo}
+      alt="SEMADD logo"
+      className="mb-4 rounded-2xl shadow-2xl p-4 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px]"
+      initial={{ opacity: 0, scale: 0.7, rotate: -10 }}
+      animate={{ opacity: 1, scale: 1, rotate: 0 }}
+      transition={{ duration: 1, type: "spring" }}
+      whileHover={{ scale: 1.08, rotate: 2 }}
+    />
 
-</div>
-  </section>
+    <motion.h2
+      className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-extrabold mb-6 drop-shadow-lg"
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
+    >
+      {/* Título aquí */}
+    </motion.h2>
+
+    <motion.p
+      className="max-w-2xl text-gray-300 text-base sm:text-lg md:text-xl lg:text-2xl mb-8 text-justify"
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
+    >
+      {/* Texto aquí */}
+    </motion.p>
+
+  </div>
+  <span>Digitalizamos y automatizamos tu empresa para que sea más eficiente, competitiva y rentable.
+Desarrollamos software, sistemas a medida, APPS y automatizaciones que eliminan procesos manuales, optimizan la operación y convierten tu negocio en una empresa eficiente y rentable.
+CTA: Agenda una asesoría gratuita</span>
+</section>
+
 </div>
 
     );
