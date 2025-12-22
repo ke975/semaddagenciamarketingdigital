@@ -223,7 +223,7 @@ export function Nav() {
     />
 
     <motion.h2
-      className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-extrabold mb-6 drop-shadow-lg"
+      className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-extrabold mb-6 drop-shadow-lg text-center"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
@@ -232,7 +232,7 @@ export function Nav() {
     </motion.h2>
 
     <motion.p
-      className="max-w-2xl text-gray-300 text-base sm:text-lg md:text-xl lg:text-2xl mb-10 text-center"
+      className="max-w-2xl text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-10 text-center"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
@@ -243,25 +243,25 @@ export function Nav() {
   </div>
 
   {/* TEXTO PARA VIDEO */}
-  <span className="relative z-10 max-w-4xl text-center text-gray-200 text-base sm:text-lg md:text-xl leading-relaxed mb-8">
+  <span className="relative z-10 max-w-4xl text-center text-white text-base sm:text-lg md:text-xl leading-relaxed mb-8">
     Digitalizamos y automatizamos tu empresa para que sea más eficiente, competitiva y rentable.
     <br /><br />
     Desarrollamos <strong>software a medida</strong>, <strong>sistemas empresariales</strong>, <strong>aplicaciones móviles</strong> y
     <strong> automatizaciones inteligentes</strong> que eliminan tareas repetitivas, optimizan la operación
     y permiten que tu negocio crezca con control y tecnología.
     <br /><br />
-    <strong className="text-white">
+    <strong>
       Agenda hoy una asesoría gratuita y descubre cómo llevar tu empresa al siguiente nivel.
     </strong>
   </span>
 
   {/* ESPACIO LISTO PARA VIDEO */}
   <div className="relative z-10 w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
-    {/* Aquí puedes colocar iframe, video o player */}
     {/* <iframe /> o <video /> */}
   </div>
 
 </section>
+
 
 
 </div>
