@@ -228,7 +228,6 @@ export function Nav() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
     >
-      Impulsamos tu empresa con tecnología inteligente
     </motion.h2>
 
     <motion.p
@@ -237,7 +236,6 @@ export function Nav() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
     >
-      En SEMADD transformamos procesos manuales en soluciones digitales eficientes, escalables y seguras.
     </motion.p>
 
   </div>
