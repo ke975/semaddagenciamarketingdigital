@@ -207,7 +207,7 @@ export function Nav() {
   </header>
 
   {/* Hero Section */}
- <section className="relative w-full flex flex-col items-center justify-center px-4">
+<section className="relative w-full flex flex-col items-center justify-center px-4">
   <ParticlesBG />
 
   <div className="relative z-10 w-full max-w-5xl px-4 py-16 md:py-32 text-center flex flex-col items-center">
@@ -215,7 +215,7 @@ export function Nav() {
     <motion.img
       src={Logo}
       alt="SEMADD logo"
-      className="mb-4 rounded-2xl shadow-2xl p-4 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px]"
+      className="mb-6 rounded-2xl shadow-2xl p-4 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px]"
       initial={{ opacity: 0, scale: 0.7, rotate: -10 }}
       animate={{ opacity: 1, scale: 1, rotate: 0 }}
       transition={{ duration: 1, type: "spring" }}
@@ -228,23 +228,41 @@ export function Nav() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
     >
-      {/* Título aquí */}
+      Impulsamos tu empresa con tecnología inteligente
     </motion.h2>
 
     <motion.p
-      className="max-w-2xl text-gray-300 text-base sm:text-lg md:text-xl lg:text-2xl mb-8 text-justify"
+      className="max-w-2xl text-gray-300 text-base sm:text-lg md:text-xl lg:text-2xl mb-10 text-center"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
     >
-      {/* Texto aquí */}
+      En SEMADD transformamos procesos manuales en soluciones digitales eficientes, escalables y seguras.
     </motion.p>
 
   </div>
-  <span>Digitalizamos y automatizamos tu empresa para que sea más eficiente, competitiva y rentable.
-Desarrollamos software, sistemas a medida, APPS y automatizaciones que eliminan procesos manuales, optimizan la operación y convierten tu negocio en una empresa eficiente y rentable.
-CTA: Agenda una asesoría gratuita</span>
+
+  {/* TEXTO PARA VIDEO */}
+  <span className="relative z-10 max-w-4xl text-center text-gray-200 text-base sm:text-lg md:text-xl leading-relaxed mb-8">
+    Digitalizamos y automatizamos tu empresa para que sea más eficiente, competitiva y rentable.
+    <br /><br />
+    Desarrollamos <strong>software a medida</strong>, <strong>sistemas empresariales</strong>, <strong>aplicaciones móviles</strong> y
+    <strong> automatizaciones inteligentes</strong> que eliminan tareas repetitivas, optimizan la operación
+    y permiten que tu negocio crezca con control y tecnología.
+    <br /><br />
+    <strong className="text-white">
+      Agenda hoy una asesoría gratuita y descubre cómo llevar tu empresa al siguiente nivel.
+    </strong>
+  </span>
+
+  {/* ESPACIO LISTO PARA VIDEO */}
+  <div className="relative z-10 w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
+    {/* Aquí puedes colocar iframe, video o player */}
+    {/* <iframe /> o <video /> */}
+  </div>
+
 </section>
+
 
 </div>
 
