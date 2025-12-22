@@ -35,7 +35,7 @@ export function AboutSemadd() {
       title: "Aumento de las ventas",
       content:
         " Las automatizaciones o software personalizan las ofertas y detectan oportunidades para que cada cliente reciba la información adecuada en el momento justo",
-    }
+    },
  
 
   ];
