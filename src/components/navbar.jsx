@@ -249,9 +249,17 @@ export function Nav() {
   </span>
 
   {/* ESPACIO LISTO PARA VIDEO */}
-  <div className="relative z-10 w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
-     <iframe src="https://www.youtube.com/watch?v=epNnZ9UHKOs" />
-  </div>
+<div className="relative z-10 w-full max-w-6xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl">
+  <iframe
+    className="w-full h-full"
+    src="https://www.youtube.com/embed/epNnZ9UHKOs"
+    title="Video SEMADD"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  />
+</div>
+
 
 </section>
 
