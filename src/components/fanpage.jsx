@@ -7,30 +7,35 @@ export function AboutSemadd() {
   const reasons = [
 
     {
-  title: "Identidad coherente",
+  title: "Mayor eficiencia",
   content:
-    "Combinamos diseño web y branding para que todo se vea conectado, profesional y auténtico a tu marca, porque tú lo mereces.",
+    " Reduce tareas repetitivas y errores humanos gracias a la automatización",
 },
        {
-      title: "Velocidad y optimización superior",
+      title: "Ahorra tiempo",
       content:
-        "Sitios rápidos, seguros y optimizados para buscadores.",
+        "Tu equipo se enfoca en tareas estratégicas, no en procesos manuales.",
     },
     {
-      title: "Sin plantillas genéricas",
+      title: "Incremento en la productividad ",
       content:
-        "Diseñamos desde cero, adaptado a tu negocio. Nada de moldes repetidos ni soluciones estancadas.",
+        "Tu equipo rinde más al tener herramientas digitales inteligentes.",
     },
     {
-      title: "100% Personalización",
+      title: "Rentabilidad",
       content:
-        "Tu sitio, tus reglas. Ajustamos funcionalidades, diseño y contenido a lo que realmente necesitás.",
+        "Menos recursos desperdiciados y operaciones más rápidas generan más ganancias.",
     },
     {
-      title: "Escalabilidad real",
+      title: "Mejora la Atención al cliente",
       content:
-        "Creamos soluciones que crecen con vos desde landing pages hasta sistemas completos de gestión.",
+        "Responde de manera rápida las dudas, pedidos, y contesta las preguntas de tu cliente 24/7 de manera eficiente y satisfactoria",
     },
+     {
+      title: "Aumento de las ventas",
+      content:
+        " Las automatizaciones o software personalizan las ofertas y detectan oportunidades para que cada cliente reciba la información adecuada en el momento justo",
+    }
  
 
   ];
