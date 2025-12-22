@@ -225,7 +225,7 @@ export function Nav() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
       >
-        <span className="text-sky-400">Bienvenidos a SEMADD</span>
+   
       </motion.h2>
       <motion.p
         className="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg md:text-xl lg:text-2xl mb-8 text-justify"
@@ -233,9 +233,7 @@ export function Nav() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5, type: "spring" }}
       >
-        <span className="font-semibold">
-          Acompañamos a empresas y emprendimientos en su proceso de transformación digital mediante la creación de branding, marketing digital, asesorías, diseño y desarrollo de sitios web empresariales.
-        </span>
+       
       </motion.p>
     </div>
 
