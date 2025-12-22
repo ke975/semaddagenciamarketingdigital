@@ -95,7 +95,8 @@ export function Footer() {
 
       {/* Derechos reservados */}
       <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-gray-700 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-400 px-6">
-  <p>&copy; {new Date().getFullYear()} SEMADD Agencia Digital. Todos los derechos reservados.</p>
+  <p>&copy; {new Date().getFullYear()} Digitalizamos y automatizamos tu empresa para que sea más eficiente, competitiva y rentable.
+Desarrollamos software, sistemas a medida, APPS y automatizaciones que eliminan procesos manuales, optimizan la operación y convierten tu negocio en una empresa eficiente y rentable.</p>
   <p className="mt-2 sm:mt-0">Hecho con 💻 por SEMADD</p>
 </div>
 
