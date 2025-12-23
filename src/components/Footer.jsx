@@ -52,8 +52,8 @@ export function Footer() {
         <div>
           <img src={Logo} className="w-36 mb-4" alt="Logo Semadd" />
           <p className="text-[15px] leading-relaxed">
-            SEMADD es una agencia digital especializada en marketing, diseño y desarrollo web empresarial. Impulsamos tu marca con creatividad, innovación y soluciones a medida para crecer en el mundo digital.
-          </p>
+Digitalizamos y automatizamos tu empresa para que sea más eficiente, competitiva y rentable.
+Desarrollamos software, sistemas a medida, APPS y automatizaciones que eliminan procesos manuales, optimizan la operación y convierten tu negocio en una empresa eficiente y rentable.          </p>
         </div>
 
         {/* Columnas de navegación */}
