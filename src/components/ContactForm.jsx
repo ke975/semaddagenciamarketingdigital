@@ -60,7 +60,7 @@ export function ContactForm(){
                 <strong className="text-sky-400">📞 Teléfono:</strong> +505 8164-6729
               </p>
               <p>
-                <strong className="text-sky-400">📞 Alternativo:</strong> +505 5766-9390
+                <strong className="text-sky-400">📞 Alternativo:</strong> +505 8947-6163
               </p>
              
            
