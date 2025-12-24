@@ -92,12 +92,11 @@ export function Nav() {
         {
             title: "Servicios",
             dropdown: [
-                { title: "Start web", path: "/start-web" },
-                { title: "Pro Web", path: "/pro-web" },
-                { title: "Web Avanzada Escalable", path: "/web-avanzada" },
-                { title: "Taller Digitalizate", path: "/taller-digitalizate" },
-                { title: "Asesoría Personalizada", path: "/asesoria" },
-                { title: "Taller Para Equipos", path: "/taller-empresas" },
+                { title: "Desarrollo de software y sistemas a medida", path: "/#services" },
+                { title: "Digitalización de negocios y procesos internos", path: "/#services" },
+                { title: "Web Avanzada Escalable", path: "/#services" },
+                { title: "Asesoría empresarial en IT y automatización", path: "/#services" },
+             
                 
             ]
         },
@@ -210,12 +209,12 @@ export function Nav() {
 <section className="relative w-full flex flex-col items-center justify-center px-4">
   <ParticlesBG />
 
-  <div className="relative z-10 w-full max-w-5xl px-4 py-16 md:py-32 text-center flex flex-col items-center">
+  <div className="relative z-10 w-full max-w-5xl px-4 py-16 md:py-18 text-center flex flex-col items-center">
     
     <motion.img
       src={Logo}
       alt="SEMADD logo"
-      className="mb-3 rounded-2xl shadow-2xl p-4 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px]"
+      className=" rounded-2xl shadow-2xl p-4 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px]"
       initial={{ opacity: 0, scale: 0.7, rotate: -10 }}
       animate={{ opacity: 1, scale: 1, rotate: 0 }}
       transition={{ duration: 1, type: "spring" }}
@@ -239,7 +238,7 @@ export function Nav() {
   </span>
 
   {/* ESPACIO LISTO PARA VIDEO */}
-<div className="relative z-10 w-full max-w-6xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl">
+<div className="relative z-10 w-full max-w-6xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl mb-8">
   <iframe
     className="w-full h-full"
     src="https://www.youtube.com/embed/epNnZ9UHKOs"

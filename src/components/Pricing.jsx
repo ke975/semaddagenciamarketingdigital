@@ -3,44 +3,39 @@ import { motion } from "framer-motion";
 export function Pricing() {
     const plans = [
         {
-            name: "Plan Básico",
-            desc: "Ideal para quienes inician su presencia digital.",
-            price: 12,
+            name: "Presencia Digital",
+            desc: "Ideal para emprendedores y negocios que inician su transformación digital.",
             isMostPop: false,
             features: [
-                "Sitio web básico",
+                "Página web profesional responsiva",
+                "Formulario de contacto",
                 "Optimización SEO inicial",
-                "Soporte por email",
-                "1 campaña en redes sociales",
-                "Hosting incluido",
+                "Integración con redes sociales",
+                "Asesoría básica de lanzamiento",
             ],
         },
         {
-            name: "Startup",
-            desc: "Perfecto para empresas en crecimiento.",
-            price: 35,
+            name: "Digitalización Empresarial",
+            desc: "Perfecto para empresas que buscan optimizar procesos y crecer.",
             isMostPop: true,
             features: [
-                "Sitio web profesional",
-                "SEO avanzado",
-                "Soporte prioritario",
-                "3 campañas en redes sociales",
-                "Gestión de anuncios",
-                "Análisis mensual",
+                "Sitio web avanzado",
+                "Automatización de procesos internos",
+                "Integración con herramientas digitales",
+                "Optimización SEO intermedia",
+                "Soporte y acompañamiento técnico",
             ],
         },
         {
-            name: "Enterprise",
-            desc: "Solución integral para grandes empresas.",
-            price: 60,
+            name: "Soluciones a Medida",
+            desc: "Para empresas que requieren sistemas personalizados y escalables.",
             isMostPop: false,
             features: [
-                "Web personalizada",
-                "SEO premium",
-                "Soporte 24/7",
-                "Campañas ilimitadas",
-                "Gestión de reputación",
-                "Consultoría estratégica",
+                "Desarrollo de sistemas a medida",
+                "Plataformas web escalables",
+                "Gestión de usuarios y roles",
+                "Integraciones personalizadas",
+                "Asesoría estratégica en tecnología",
             ],
         },
     ];
@@ -56,14 +51,15 @@ export function Pricing() {
                     viewport={{ once: true }}
                 >
                     <h3 className="text-indigo-700 text-3xl font-extrabold sm:text-4xl drop-shadow mb-2">
-                        Planes para cada etapa de tu negocio
+                        Soluciones para cada etapa de tu negocio
                     </h3>
                     <div className="mt-3 max-w-xl mx-auto text-gray-700">
                         <p>
-                            Elige el plan que mejor se adapte a tus necesidades y haz crecer tu presencia digital con SEMADD.
+                            En SEMADD desarrollamos soluciones digitales adaptadas a las necesidades reales de tu empresa.
                         </p>
                     </div>
                 </motion.div>
+
                 <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 justify-center">
                     {plans.map((item, idx) => (
                         <motion.div
@@ -79,23 +75,22 @@ export function Pricing() {
                             viewport={{ once: true }}
                         >
                             {item.isMostPop && (
-                                <span className="w-32 absolute -top-5 left-1/2 -translate-x-1/2 px-3 py-2 rounded-full border shadow-md bg-indigo-600 text-white text-center text-sm font-semibold tracking-wide">
-                                    Más popular
+                                <span className="w-36 absolute -top-5 left-1/2 -translate-x-1/2 px-3 py-2 rounded-full border shadow-md bg-indigo-600 text-white text-center text-sm font-semibold tracking-wide">
+                                    Más solicitado
                                 </span>
                             )}
+
                             <div className="p-8 space-y-4 border-b">
                                 <span className="text-indigo-600 font-bold text-lg tracking-wide">
                                     {item.name}
                                 </span>
-                                <div className="text-gray-800 text-4xl font-extrabold flex items-end gap-1">
-                                    ${item.price}
-                                    <span className="text-base text-gray-500 font-normal mb-1">/mes</span>
-                                </div>
                                 <p className="text-gray-600">{item.desc}</p>
+
                                 <button className="px-4 py-3 rounded-lg w-full font-semibold text-base duration-150 text-white bg-indigo-600 hover:bg-indigo-700 shadow-md transition-all">
-                                    Empezar ahora
+                                    Solicitar información
                                 </button>
                             </div>
+
                             <ul className="p-8 space-y-3">
                                 <li className="pb-2 text-indigo-700 font-semibold text-base">
                                     Incluye:
