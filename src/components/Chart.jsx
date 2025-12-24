@@ -35,8 +35,8 @@ export function ImportanceChart() {
             <h3 className="text-xl font-semibold text-white mb-2">{section}</h3>
             <p className="text-white">
               {section === "Misión"
-                ? "Ayudamos a las empresas al mejoramiento y ordenamiento de procesos administrativos, financieros, atención al cliente, logística y posicionamiento de marca a través de la automatización de flujos de trabajo, desarrollo de sistemas empresariales, páginas web, apps e integración de inteligencia artificial, lo cual les  disminuirá el tiempo de ejecución en sus procesos y reducirán  gastos y costos."
-                : "Ser un aliado referente de las empresas a nivel centroamericano en soluciones digitales integrales, destacándonos por la calidad humana, la innovación constante y el impacto positivo que generamos en cada proyecto. Aspiramos a construir relaciones duraderas con nuestros clientes, evolucionando juntos en un mundo digital en constante cambio."}
+                ? "Potenciamos equipos y negocios con soluciones digitales y automatización inteligente para que trabajen mas eficientemente y sean más rentables.."
+                : "Ser referente en innovación tecnológica, transformando la forma en que las empresas trabajan y maximizando su productividad y rentabilidad."}
             </p>
           </motion.div>
         ))}

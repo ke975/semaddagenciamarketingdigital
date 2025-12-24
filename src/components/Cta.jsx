@@ -15,7 +15,7 @@ export function Cta() {
           </h2>
 
           <p className="text-lg text-gray-300">
-            Desarrollo web, branding, marketing digital y estrategias digitales a medida para empresas que quieren destacar online.
+           Digitalizamos y automatizamos tu empresa para que sea más eficiente, competitiva y rentable.
           </p>
 
           {/* Teléfonos de contacto */}

@@ -12,13 +12,13 @@ export function Testimonials() {
             name: "Tecnogiras Nicaragua",
             title: "Organización de eventos tecnológicos",
             quote:
-                "SEMADD nos apoyó con el diseño de nuestra web y campañas de marketing digital. Ahora llegamos a más empresas y profesionales. Excelente servicio y atención personalizada.",
+                "“SEMADD nos apoyó en el diseño de nuestra página web y en la implementación de campañas de marketing digital. Gracias a su trabajo, logramos ampliar nuestro alcance y llegar a más empresas y profesionales. Destacamos su excelente servicio, compromiso y atención personalizada durante todo el proceso.”.",
         },
         {
-            name: "Caffeto",
-            title: "Cafetería y eventos",
+            name: "SERINSA",
+            title: "Empresa de servicios para microempresas",
             quote:
-                "El equipo de SEMADD nos ayudó a mejorar nuestra presencia digital y a conectar con más clientes. Su creatividad y profesionalismo marcaron la diferencia en nuestro crecimiento.",
+                "“La capacitación brindada por el equipo fue de gran valor para nuestro personal administrativo. Los contenidos fueron claros, prácticos y directamente aplicables a nuestras funciones diarias. Gracias a esta formación, hemos logrado optimizar procesos, mejorar la organización interna y fortalecer las competencias digitales de nuestro equipo. Sin duda, una experiencia positiva que recomendamos a otras empresas que buscan capacitar a su talento humano.”.",
         },
     ];
 
