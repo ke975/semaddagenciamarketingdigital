@@ -2,8 +2,8 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export function Cta() {
   const phones = [
-    { number: "+50581646729", label: "+505 8164 6729" },
-    { number: "+50557669390", label: "+505 5766 9390" },
+    { number: "+50589476163", label: "+505 89476163" },
+    { number: "+50581646729", label: "+505 81646729" },
   ];
 
   return (
@@ -33,7 +33,7 @@ export function Cta() {
 
             {/* Botón directo a WhatsApp */}
             <a
-              href="https://wa.me/+50557669390"
+              href="https://wa.me/+50589476163"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-green-400 transition-colors duration-200"
@@ -46,7 +46,7 @@ export function Cta() {
           {/* Botón CTA principal */}
           <div className="pt-6">
             <a
-              href="https://wa.me/+50557669390"
+              href="https://wa.me/+50589476163"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white text-lg font-semibold rounded-md shadow-md transition-all duration-200"
