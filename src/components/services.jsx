@@ -11,17 +11,18 @@ const categorizedPosts = [
         href: "/start-web",
       },
       {
-        title: "Digitalización de negocios y procesos internos",
+        title: "Automatización de Procesos y flujos de trabajo",
         desc: "Ayudamos a transformar tu negocio mediante la automatización y digitalización de procesos internos. Implementamos herramientas tecnológicas que reducen costos, mejoran el control y aumentan la eficiencia operativa.",
         img: "https://images.icon-icons.com/3559/PNG/512/shirt_online_store_ecommerce_commerce_marketplace_website_shopping_clothing_icon_225154.png",
         href: "/pro-web",
       },
-      {
-        title: "Web Avanzada Escalable",
-        desc: "Desarrollamos plataformas web avanzadas y escalables, listas para crecer junto a tu empresa. Ideales para negocios que requieren alto rendimiento, seguridad, integración con sistemas y expansión futura.",
-        img: "https://images.icon-icons.com/4260/PNG/512/web_graphic_infographic_website_time_icon_265383.png",
-        href: "/web-avanzada",
-      },
+   {
+  title: "Web Avanzada y Aplicaciones Móviles",
+  desc: "Desarrollamos plataformas web avanzadas y escalables junto con aplicaciones móviles para Android e iOS. Soluciones pensadas para crecer con tu empresa, con alto rendimiento, seguridad, integración con sistemas y una experiencia optimizada en cualquier dispositivo.",
+  img: "https://images.icon-icons.com/4260/PNG/512/web_graphic_infographic_website_time_icon_265383.png",
+  href: "/web-avanzada",
+},
+
     ],
   },
   {
