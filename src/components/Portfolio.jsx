@@ -5,14 +5,6 @@ import instagram2 from "../assets/Instagram2.png";
 import chessecake from "../assets/Chessecake1.png";
 import Hamburguesa from "../assets/Limondapost.png";
 
-const projects = [
-  { img: CAFTERUA, title: "Cafterua", desc: "Branding y redes sociales" },
-  { img: Gira, title: "Gira Técnica Café", desc: "Evento empresarial" },
-  { img: instagra1, title: "Instagram Creativo", desc: "Diseño de feed" },
-  { img: instagram2, title: "Instagram Empresarial", desc: "Gestión de contenido" },
-  { img: chessecake, title: "Cheesecake", desc: "Fotografía y diseño" },
-  { img: Hamburguesa, title: "Limonada Post", desc: "Campaña de producto" },
-];
 
 export function Portfolio() {
   return (
