@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/logobuenoblanco.png";
 import { ContactForm } from "../components/ContactForm";
 // Particles background animatio
 function ParticlesBG() {
@@ -79,7 +79,7 @@ export function NavContactForm() {
     const [state, setState] = useState(false);
     const [dropdown, setDropdown] = useState(false);
 
-    const navigation = [
+      const navigation = [
         { title: "Inicio", path: "/"},
         {
             title: "Nosotros",
@@ -91,13 +91,12 @@ export function NavContactForm() {
         {
             title: "Servicios",
             dropdown: [
-                { title: "Start web", path: "/start-web" },
-                { title: "Pro Web", path: "/pro-web" },
-                { title: "Web Avanzada Escalable", path: "/web-avanzada" },
-                { title: "Taller Digitalizate", path: "/taller-digitalizate" },
-                { title: "Asesoría Personalizada", path: "/asesoria" },
-                { title: "Taller Para Equipos", path: "/taller-empresas" },
-              
+                { title: "Desarrollo de software y sistemas a medida", path: "/#services" },
+                { title: "Digitalización de negocios y procesos internos", path: "/#services" },
+                { title: "Web Avanzada Escalable", path: "/#services" },
+                { title: "Asesoría empresarial en IT y automatización", path: "/#services" },
+             
+                
             ]
         },
         { title: "Contáctanos", path: "/contact" }

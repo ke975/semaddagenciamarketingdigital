@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const categorizedPosts = [
   {
-    category: "Desarrollo Web",
+    category: "Desarrollo de Software ",
     items: [
       {
         title: "Desarrollo de software y sistemas a medida",
