@@ -241,7 +241,7 @@ export function Nav() {
 <div className="relative z-10 w-full max-w-6xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl mb-8">
   <iframe
     className="w-full h-full"
-    src="https://www.youtube.com/embed/epNnZ9UHKOs"
+    src="https://www.youtube.com/embed/hjE_JjHgVR8"
     title="Video SEMADD"
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
