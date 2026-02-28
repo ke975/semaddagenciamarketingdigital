@@ -213,7 +213,7 @@ export  function NavLandingpage() {
         
       },
         {
-        title: "Estrategia, Oferta y Embuddo Inteligente",
+        title: "Estrategia, Oferta y Embudo Inteligente",
         desc: "En este programa descubrirás cómo conectar cada pieza del proceso de venta: desde la definición clara de tu cliente ideal, hasta la creación de una propuesta de valor poderosa y un sistema automatizado que guíe al prospecto paso a paso.",
         
       },
@@ -288,7 +288,7 @@ export  function NavLandingpage() {
       transition={{ duration: 0.8 }}
     >
       <span className="inline-block px-4 py-2 mb-6 text-sm rounded-full bg-white/5 border border-white/10 text-gray-300 backdrop-blur-md">
-        Colaboración oficial SEMADD × Thinkowell
+        Colaboración oficial SEMADD × Thinkwell
       </span>
 
       <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-sky-400 to-purple-500 bg-clip-text text-transparent">
