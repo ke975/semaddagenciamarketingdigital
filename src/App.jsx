@@ -13,6 +13,7 @@ import { TallerEmpresas } from "./pages/TallerEmpresas";
 import { MarcaBase } from "./pages/MarcaBase";
 import { MarcaPro } from "./pages/MarcaPro";
 import { IdentidadTotal } from "./pages/IdentidadTotal";
+import { LandingPageEvent } from "./pages/LandingPageEvent";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/MarcaBase" element={<MarcaBase />} />
         <Route path="/marca-pro" element={<MarcaPro />} />
         <Route path="/identidad-total" element={<IdentidadTotal />} />
+        <Route path="/eventothinkwell-semadd" element={<LandingPageEvent />} />
         {/* Agrega más rutas según sea necesario */}
       </Routes>
     </BrowserRouter>
